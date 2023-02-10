@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "DTD_ms69.2.dtd">
+<?xml-model href="RNG_Edition_ms_69.2" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="RNG_Edition_ms_69.2" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<!-- DTD seulement pour déclaration d’entités -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Thucydide</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Évaluation XML TEI - <orgName xml:id="ENC">École nationale des chartes</orgName><date when="2023-02">Février 2023</date></edition>
+            <respStmt>
+               <resp>Transcription et encodage du manuscrit.</resp>
+               <persName xml:id="William_Le_Roux">
+                  <forename>William</forename>
+                  <surname>Le Roux</surname>
+               </persName>
+            </respStmt>
+         </editionStmt>
+         
+         <!-- Dans l'hypothèse où cela donnerait lieu à une édition soutenue par l'ENC -->
+         <publicationStmt>
+            <p>Laurentianus LXIX-2</p>
+            <publisher>Éditions en ligne de l’école des chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when-iso="2023-02">Février 2023</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc xml:id="ms69-2">
+               <msIdentifier>
+                  <country>Italie</country>
+                  <settlement>Florence</settlement>
+                  <institution>Biblioteca Medicea Laurenziana</institution>
+                  <collection>Plutei</collection>
+                  <idno>Plut.69.2</idno>
+                  <msName>Laurentianus 69-2</msName>
+                  <altIdentifier>
+                     <idno>AWOItqraI1A4r7GxMMPB</idno>
+                     <note>identifiant BML-Firenze</note>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>Numéro Diktyon : 16529</idno>
+                     <note>http://pinakes.irht.cnrs.fr/notices/cote/16529</note>
+                  </altIdentifier>
+                  <altIdentifier>
+                     <idno>Medium:8731</idno>
+                     <note>http://medium-avance.irht.cnrs.fr/Manuscrits/Voir?idFicheManuscrit=8731</note>
+                  </altIdentifier>
+                  <!--<note>cote de consultation du microfilm en noir et blanc en salle de lecture</note>
+                 <note>cote de la matrice du microfilm MF 16080 pour demander une reproduction</note>-->
+               </msIdentifier>
+               
+               <head>
+                  <title>Thucydide</title>
+                  <origDate notAfter="1000" notBefore="0901">Xème siècle</origDate>
+               </head>
+               
+               <msContents>
+                  <summary>
+                     <locus from="2r" to="513v">Histoire de la guerre du Péloponnèse par Thucydide</locus>
+                  </summary>
+                  
+                  <msItem xml:id="Histoire-de-la-Guerre-du-Peloponnese">
+                     <title>Thucydide</title>
+                     <incipit>Θουκυδΐδης αθηναῖος συνέγραψε τὸν πόλεμον τῶν πελοποννησίων καὶ ἀϑηναίων</incipit>
+                     <incipit>Thucydide l'athénien a raconté comment se déroula la guerre entre les Péloponnésiens et les Athéniens.</incipit>
+                     <colophon>"DEO GRATIAS PETRUS SCRIPSIT"</colophon>
+                     <colophon>Pierre a écrit par la grâce de Dieu</colophon>
+                     <author>Thucydide</author>
+                     <title>Thucydide </title>
+                     <textLang mainLang="grc" otherLangs="la fr"/>
+                     <msItem xml:id="Deuxième-main">
+                        <locus from="2r" to="7v">Folios 2r  à 7v (I.1.1...-15.1) νήσους</locus>
+                        <respStmt>
+                           <resp>Copiste</resp>
+                           <name>
+                              <persName xml:id="Anonyme">Anonyme</persName>
+                              <certainty target="#Anonyme" locus="value" degree="1.0">
+                                 <desc>Écriture plus récente que pour le reste du manuscrit, dans un style Beta-Gamma du début XIIIe siècle</desc>
+                              </certainty>
+                           </name>
+                        </respStmt>
+                        <incipit>Θουκυδΐδης αθηναῖος συνέγραψε τὸν πόλεμον τῶν πελοποννησίων καὶ ἀϑηναίων</incipit>
+                        <incipit>Thucydide l'athénien a raconté comment se déroula la guerre entre les Péloponnésiens et les Athéniens.</incipit>
+                        <explicit>τε οἰκήσεισ, καὶ οὐκ ἀσφαλεῖς παρ ἄλλήλους ἐφόδους.</explicit>
+                        <explicit>faute d'habitations protégées (...)</explicit>     
+                        <textLang mainLang="grc"/>
+                     </msItem>                     
+                     <msItem xml:id="Première-main">
+                        <locus from="8r" to="513v">Folios 8r à 513v (I.15.1 - fin)</locus>
+                        <respStmt>
+                           <resp>Copiste</resp>
+                           <name>
+                              <persName xml:id="Petrus">Petrus</persName>
+                              <certainty target="#Petrus" locus="value" degree="1.0">
+                                 <desc>Nom du copiste d'après le colophon, écriture du Xe siècle en minuscule bouleutée</desc>
+                              </certainty>
+                           </name>
+                        </respStmt>
+                        <explicit>"DEO GRATIAS PETRUS SCRIPSIT"</explicit>
+                        <textLang mainLang="grc" otherLangs="la"/>
+                   </msItem>
+                </msItem>                               
+               </msContents>
+               
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc material="parchment">
+                        <support>Parchemin</support>
+                        <extent>
+                           <height unit="330mm"/>
+                           <width unit="260mm"/>
+                        </extent>
+                        <foliation>
+                           <p>512 feuillets (plus 2 gardes en parchemin au début et à la fin)</p>
+                           <p>Nous ne sommes pas parvenus à déterminer les types de cahiers à partir de la seule numérisation mais nous penchons pour un in-quarto comme il est de coutume pour un manuscrit parcheminé de cette dimension (33x26cm), car pliée en deux sur elle-même en perpendiculaire avec les flancs de la bête, puis repliée dans le sens de l'échine de manière à former deux diplômes ou un binion, la peau ne conservera que la deuxième pliure le long de laquelle le relieur cousit l'ouvrage.</p>
+                           <p>Foliotation ancienne en chiffres arabes, par feuillet, en haut à droite du recto.</p>
+                        </foliation>
+                        <condition>Plusieurs feuillets ont été réparés, le texte amputé a parfois été recopié sur les réparations, cela a le plus souvent été fait ur les feuillets recto que sur les feuillets verso.</condition>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="1" writtenLines="23 30">
+                           <p>Les marges de tête, de queue, de couture et de gouttière diffèrent peu d'un feuillet à l'autre et suivent le nombre variable de lignes</p>
+                           <p>La plupart des pages contiennent entre 23 et 30 lignes de texte. On discerne la règlure pour la deuxième main à partir du folio 8r mais pas pour la première. Le manuscrit est nommé d'après le premier mot de l'incipit, Thucydide. Le titre courant est inscrit en grec et en italien dans un encart cloué au plat de la première de couverture.</p>
+                        </layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  
+                  <handDesc hands="2">
+                     <handNote xml:id="mainhand" scribeRef="#Petrus" scope="major" corresp="#ms69.2">
+                        <p>La Guerre du Péloponnèse de Thucydide est recopiée en grande part par Petrus au Xe siècle dans une écriture à minuscules bouleutées, à l'exception des 7 premiers folios et de quelques notes adscrites :</p>
+                     </handNote>
+                     <handNote xml:id="secondhand" scribeRef="#Anonyme" scope="minor" corresp="#ms69.2">
+                        <p>La première partie du manuscrit a été copiée par un copiste anonyme postérieur à Petrus, dans un style Beta-Gamma du début du XIIIe siècle, voir ci-après le <gi>ScriptNote</gi></p>
+                     </handNote>
+                  </handDesc>
+                  
+                  <scriptDesc>
+                     <scriptNote xml:id="style-1" scribeRef="#Petrus" script="min-bouleutée">
+                        <p>Minuscule bouleutée caractéristique du début du Xe siècle.</p>
+                        <p>C'est une écriture très élégante utilisée principalement sur des parchemins de qualité contenant les écrits bibliques ou les pères de l'Église, bien que certains auteurs laïcs furent représentés dans cette écriture, comme Hérodote, Thucydide en l'occurrence. Les marges importantes et la plupart du temps dénuées de commentaires et de glose, dénotent le caractère luxueux de ces ouvrages.</p>
+                        <p>Ascendants et descendants sont réduits au minimum (sauf lambda et rho), le delta est remarquable en cela qu'il monte sans aller à gauche comme il le fait dans d'autres scripts minuscules.</p>
+                        <p>Alors que la minuscule grecque est en général composée de courbes et de boucles évitant l'angle droit à tout prix, on note les formes carrées des courbes en "u" le long de la ligne du bas.</p>                        
+                        <p>La minuscule bouleutée et la Perlschrift furent identifiées et décrites par le byzantiniste viennois Herbert Hunger, qui donna en 1954 le nom allemand de Perlschrift à l'écriture éponyme <bibl>Die Perlschrift, eine Stilrichtung der griechischen Buchschrift des 11. Jahrhunderts", in id., Studien zur griechischen Paläographie, pp. 22-32</bibl>. Toutefois sa "découverte" de l'écriture "bouletée" qu'il présenta dans une partie de son essai à la Conférence de paléographie de Paris de 1974 <bibl>La paléographie grecque et byzantine. Paris, 21-25 octobre 1974. Paris, Centre national de la Recherche scientifique, 1977, pp. 201-220, en particulier pp. 203-4</bibl> dans lequel il disait vouloir l'appeler "Kirchenlehrerstil", fut éclipsée par une étude détailée de la même écriture lors de la même conférence par le paléographe français Jean Irigoin (pp. 191-199) qui proposa quant à lui de l'appeler minuscule bouleutée. Fait amusant, jusqu'à la conférence les deux savants ignoraient tout du travail de l'autre sur cette écriture.</p>
+                        <p>Une monographie entière dédiée à cette écriture a été rédigée par Maria Luisa Agati en 1992 et identifie près de 200 manuscrits en écriture bouleutée.<bibl>Maria Luisa Agati, La minuscola «bouletée». Prefazione di Paul Canart (Littera Antiqua 9, 1-2). — Scuola Vaticana di Paleografïa, Diplomatica e Archivistica, Cité du Vatican 1992. Vol. 1 (texte) : xxxiii-368 p. ; Vol. 2 : 220</bibl></p>
+                     </scriptNote>
+                     <scriptNote xml:id="style-2" scribeRef="#Anonyme" script="Beta-Gamma">
+                        <p>Écriture Beta-Gamma caractéristique du XIIIe siècle.</p>
+                        <p>Elle est appelée ainsi car les lettres les plus larges sont le bêta et le gamma. Le module des lettres est généralement faible et les élargissement extravagants du bêta en forme de coeur notamment et d'un gamma majuscule assez grand et arrondi.</p>
+                        <p>N. Wilson a distingué ce style caractérisé par un contraste modulaire des minuscules dans une de ses contributions à la conférence de Paris de 1974 Paris <bibl>La paléographie grecque et byzantine. Paris, 21-25 octobre 1974. Paris, Centre national de la Recherche scientifique, 1977, pp. 263-7</bibl>.</p>
+                        <p>De ce style, Wilson a aussi distingué la courbe de la queue du rho en deux mouvements, et la "forme angulaire mais disloquée de la ligature epsilon-rho en forme d'as de pique inversé".</p>
+                        <p>On notera que la cursivité de cette écriture ne se limite pas seulement aux lettres, mais également aux abréviations, aux accents et aux esprits, ainsi il y a parfois une combinaison du marquage des accents et des esprits (accent aigu + esprit léger), et beaucoup d'abréviations omicron-upsilon, et de ligatures du bout des lettres avec les accents ou esprits.</p>
+                        <p>Ce style assez reconnaissable se retrouve dans des manuscrits allant de 1253 à 1296.</p>
+                     </scriptNote>
+                  </scriptDesc>
+                  
+                  <bindingDesc>
+                     <binding contemporary="1" when="1837">
+                        <decoNote type="plat_sup">Cuir rouge frappé ou marqué assez abîmé ; un "p" au crayon blanc singifie l'appartenance à la collection plutei, le "69" et le "2" en blanc donnent également la cote du manuscrit.</decoNote>
+                        <decoNote type="plat_inf">Idem cuir rouge frappé ou marqué assez abîmé.</decoNote>
+                        <decoNote type="etiquette">L'étiquette présente le titre de l'ouvrage en grec et en italien, titre qui n'est autre que le nom de l'auteur et le premier mot de la Guerre du Péloponnèse : θουκυδιδης Thucidide.</decoNote>
+                        <decoNote type="dos">Dos lisse en cuir rouge granulé dont ne peut distinguer les nerfs, ce qui trahit peut-être une restauration contemporaine, voir l'élément<gi>decoNote</gi> suivant d'attribut <att>contregarde_inf</att>.</decoNote>
+                        <decoNote type="tranchefile">On distingue une couture ornementale de couleurs et de renforcement exécutée au moyen d'un ou plusieurs fils indépendants du fil de couture, sur un nerf supplémentaire, à chacune des extrémités du corps du volume, de couleurs blanche et rouge.</decoNote>
+                        <!-- Description des gardes : gardes blanches ; gardes couleurs (marbrées, gaufrées, peintes, dominotées, etc.) généralement suivies de gardes blanches ; dans tous les cas, spécifier le nombre de gardes (début + fin du volume)-->
+                        <decoNote type="contregarde_sup">Gardes en parchemin blanches + deux gardes volantes en parchemin (1 + 2).</decoNote>
+                        <decoNote type="contregarde_inf">Gardes en parchemin blanches + une garde volante (1 + 1). Sur la contregarde inférieure, en haut à droite, l'inscription "restauranto 18/5/1837" donne la date de la dernière restauration en 1837 et confirme l'hypothèse d'une reliure contemporaine.</decoNote>
+                        <!-- Élément qui inclut aussi bien des remarques sur la couture que les charnières, claies ou modes d'attaches des plats : tous éléments de la structure dont la description est jugée utile à la description et l'identification de la reliure-->
+                        <decoNote type="structure">Deux fermoirs, composés de tenons en métal et d'agrafes dont les pattes sont faites de bandes de cuirs entrelacées.</decoNote>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               
+               <history>
+                  <origin>
+                     <p>Manuscrit byzantin écrit au <origDate notBefore="0901" notAfter="1000">Xème siècle</origDate> par Petrus qui rédige le colophon du f.513v mais omet la date.</p>
+                  </origin>
+                  <provenance>
+                     <p>Le plus ancien possesseur connu est <name type="person">Giovanni Aurispa</name> qui vend le ms. à <name type="person">Niccolò Niccoli</name> en <date when="1417">1417</date><bibl>voir Ullman-Stadter 1972, p. 64, 95, 261 et Speranzi 2010 1, p. 218 et Speranzi 2010 2, p. 24, 25, 28</bibl>.
+                   </provenance>
+                  <provenance>
+                     <p>Après la mort de <name type="person">Niccolò Niccoli</name>en <date when="1437">1437</date>, ses livres sont entrés au couvent de <placeName>San Marco</placeName>.</p>
+                   </provenance>
+                  <acquisition>
+                     <p>Le ms. fait partie de la centaine de mss. transférés de <placeName>San Marco</placeName> à la <orgName>Biblioteca Medicea Laurenziana</orgName> vers <date when="1550">1550</date> sur ordre de <name type="person">Cosimo I</name>, <bibl>Speranzi, 2010</bibl>.<-->
+                     <p>Sur la feuille de garde blanche 1r un <stamp n="1">tampon rouge de la Biblioteca Medicea Laurenziana</stamp>. Sur le feuillet 2r un <stamp n="2 2r">tampon rouge de la Biblioteca Medicea Laurenziana</stamp>.
+                        plume.</p>
+                   </acquisition>
+               </history>
+            </msDesc>
+            
+            <listBibl>
+               <head>Bibliographie des ouvrages mentionnant le <bibl corresp="#ms 69-2">manuscrit gr. 69-2</bibl>.</head>
+               <biblStruct xml:id="Romilly1953">
+                  <monogr>
+                     <author>
+                        <persName>
+                           <forename full="yes">Thucydide</forename>
+                        </persName>
+                     </author>
+                     <respStmt>
+                        <resp>Texte établit et traduit par </resp>
+                        <name>
+                           <forename>Jacqueline</forename>
+                           <surname full="yes">de Romilly</surname>
+                        </name>
+                     </respStmt>
+                     <title level="m">La Guerre du Péloponnèse</title>
+                     <idno type="ISSN">0184-7155</idno>
+                     <imprint>
+                        <pubPlace>Paris</pubPlace>
+                        <publisher>Les Belles Lettres</publisher>
+                        <date when="1953">1953</date>
+                        <biblScope unit="volume">1</biblScope>
+                     </imprint>
+                     <extent>LIX + 206 pages </extent>
+                  </monogr>
+               </biblStruct>
+               
+               <biblStruct xml:id="Speranzi2010_01">
+                  <analytic>
+                     <author>D. Speranzi</author>
+                     <title level="a">La biblioteca dei Medici. Appunti sulla storia della formazione del fondo greco della libreria medicea privata</title>
+                  </analytic>
+                  <monogr>
+                     <author>G. Arbizzoni (ed)</author>
+                     <title level="m">Principi e signori. Le Biblioteche nella seconda metà del Quattrocento. Atti del Convegno di Urbino 5-6 giugno 2008</title>
+                     <imprint>
+                        <pubPlace>Urbino</pubPlace>
+                        <publisher>Accademia Raffaello</publisher>
+                        <date when="2010">2010</date>
+                     </imprint>
+                     <biblScope unit="page" from="217" to="264">217-264</biblScope>
+                  </monogr>
+                  <series>
+                     <title level="s">Collana di studi e testi</title>
+                     <biblScope unit="volume">25</biblScope>
+                  </series>
+               </biblStruct>
+               
+               <biblStruct xml:id="Speranzi2010_02">
+                  <analytic>
+                     <author>D. Speranzi</author>
+                     <title level="a">Note codicologiche e paleografiche</title>
+                  </analytic>
+                  <monogr>
+                     <author>M. Bernabò (éd)</author>
+                     <title level="m">La collezione di testi chirurgici di Niceta. Firenze, Biblioteca Medicea Laurenziana, Plut. 74.7. Tradizione medica classica a Bisanzio</title>
+                     <imprint>
+                        <pubPlace>Roma</pubPlace>
+                        <publisher>Edizioni di Storia e Letteratura</publisher>
+                        <date when="2010">2010</date>
+                     </imprint>
+                     <biblScope unit="page" from="13" to="35">13-35</biblScope>
+                  </monogr>
+                  <series>
+                     <title level="s">Folia Picta</title>
+                     <biblScope unit="volume">2</biblScope>
+                  </series>
+               </biblStruct>
+               
+               <biblStruct xml:id="Ullman-Stadter1972">
+                  <analytic>
+                     <author>B. Ullman, P. Stadter</author>
+                     <title>The Public Library of Renaissance Florence. Niccolò Niccoli, Cosimo de' Medici and the Library of San Marco</title>
+                  </analytic>
+                  <monogr>
+                     <author>G. Arbizzoni (ed)</author>
+                     <title level="j">Medioevo e umanesimo 10</title>
+                     <idno type="ISBN">978-88-8455-008-8</idno>
+                     <imprint>
+                        <pubPlace>Padova</pubPlace>
+                        <publisher>Editrice Antenore</publisher>
+                        <date when="1972">1972</date>
+                     </imprint>
+                     <extent>370 pages</extent>
+                  </monogr>
+                  <series>
+                     <title level="s">Medioevo e umanesimo</title>
+                     <biblScope unit="volume">10</biblScope>
+                  </series>
+               </biblStruct>
+               
+               <biblStruct xml:id="Agati1992">
+                  <analytic>
+                     <author>M. Agati</author>
+                     <title level="a">La minuscola "bouletée"</title>
+                  </analytic>
+                  <monogr>
+                     <author>G. Arbizzoni (ed)</author>
+                     <title level="j">Littera Antiqua 9</title>
+                     <imprint>
+                        <pubPlace>Città del Vaticano</pubPlace>
+                        <publisher>Scuola Vaticana di Paleografia, Diplomatica e Archivistica</publisher>
+                        <date when="1992">1992</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title level="s">Littera Antiqua</title>
+                     <biblScope unit="volume">9</biblScope>
+                  </series>
+               </biblStruct>
+               
+               <biblStruct xml:id="Cortesi1998">
+                  <analytic>
+                     <author>M. Cortesi</author>
+                     <title level="a">Libri greci letti e scritti alla scuola di Vittorino da Feltre : fra mito e realtà</title>
+                  </analytic>
+                  <monogr>
+                     <title level="m">I manoscritti greci tra riflessione e dibattito : Atti del 5 Colloquio internazionale di paleografia greca, Cremona, 4-10 ottobre 1998</title>
+                     <imprint>
+                        <pubPlace>Firenze</pubPlace>
+                        <publisher>Gonnelli</publisher>
+                        <date when="2000">2000</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title level="s">Papyrologica Florentina</title>
+                     <biblScope unit="volume">31</biblScope>
+                     <biblScope unit="page">p. 405</biblScope>
+                  </series>
+               </biblStruct>
+               
+               <biblStruct xml:id="Mazzucchi1979">
+                  <analytic>
+                     <author>C. Mazzucchi</author>
+                     <title level="a">Alcune vicende della tradizione di Cassio Dione in epoca bizantina</title>
+                  </analytic>
+                  <monogr>
+                     <title level="j">Aevum 53</title>
+                     <imprint>
+                        <pubPlace>Milano</pubPlace>
+                        <publisher>Università Cattolica del Sacro Cuore</publisher>
+                        <date when="1979">1979</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title level="s">Aevum</title>
+                     <biblScope unit="issue">1</biblScope>
+                     <biblScope unit="volume">53</biblScope>
+                     <biblScope unit="page">p. 126</biblScope>
+                  </series>
+               </biblStruct>
+               
+               <biblStruct xml:id="PerezMartin2002">
+                  <analytic>
+                     <author>I. Pérez Martín</author>
+                     <title level="a">Lectores y público de la historiografía griega</title>
+                  </analytic>
+                  <monogr>
+                     <title level="j">Estudios clásicos 121</title>
+                     <imprint>
+                        <pubPlace>Madrid</pubPlace>
+                        <publisher>Sociedad Española de Estudios Clásicos</publisher>
+                        <date when="2002">2002</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title level="s">Estudios clásicos</title>
+                     <biblScope unit="volume">121</biblScope>
+                     <biblScope unit="page">p. 137</biblScope>
+                  </series>
+               </biblStruct>
+               
+               <biblStruct xml:id="PetitmenginCiccolini2005">
+                  <analytic>
+                     <author>P. Petitmengin</author>
+                     <author>L. Ciccolini</author>
+                     <title level="a">Jean Matal et la bibliothèque de Saint-Marc de Florence (1545)</title>
+                  </analytic>
+                  <monogr>
+                     <title level="j">Italia medioevale e umanistica 46</title>
+                     <imprint>
+                        <pubPlace>Padova</pubPlace>
+                        <publisher>Editrice Antenore</publisher>
+                        <date when="2005">2005</date>
+                     </imprint>
+                  </monogr>
+                  <series>
+                     <title level="s">Italia medioevale e umanistica</title>
+                     <biblScope unit="volume">46</biblScope>
+                     <biblScope unit="page">p. 295</biblScope>
+                  </series>
+               </biblStruct>                              
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+     
+     <profileDesc>
+        <langUsage>
+           <language ident="grc" xml:lang="grc">Grec ancien avant 1453</language>
+           <language ident="fre" xml:lang="fre">Français</language>
+           <language ident="la" xml:lang="la">Latin</language>
+        </langUsage>
+        <settingDesc>
+           <listPlace>
+              <place xml:id="Athenes">
+                 <placeName>Athènes</placeName>
+                 <note>Cité à la tête de la Ligue de Délos</note>
+                 <note>"Athènes"</note>
+              </place>
+              <place xml:id="Sparte">
+                 <placeName>Sparte
+                    <addName type="alias">Lacédémone</addName>
+                 </placeName>
+                 <note>Cité à la tête de la Ligue du Péloponnèse</note>
+                 <note>"Sparte"</note>
+              </place>
+              <place xml:id="Grece">
+                 <placeName>Grèce
+                    <addName>Héllade</addName>
+                    <addName> ̔Ελλάς</addName>
+                 </placeName>                 
+                 <note>Ensemble des territoires peuplés par des <orgName type="people" ref="#Grecs">Grecs</orgName>, cela inclut en plus des cités de la Grèce propre les cités d'Asie Mineure et de Magna Graecia et leurs territoires.</note>
+                 <note>" Ἑλλὰσ "</note>
+              </place>
+              <place xml:id="Ionie">
+                 <placeName>Ionie</placeName>
+                 <note>Région du monde grec dans l'ouest de l'Asie mineure, entre Phocée et Milet.</note>
+                 <note>"ἰωνίαν"</note>
+              </place>
+              <place xml:id="Troie">
+                 <placeName>Troie
+                    <addName>Ilion</addName>
+                 </placeName>
+                 <note>Cité d'Asie mineure au centre des guerres mythiques de Troie dans les poèmes homériques</note>
+                 <note>"τρωικῶν"</note>
+              </place>
+              <place xml:id="Attique">
+                 <placeName>Attique</placeName>
+                 <note>Péninsule grecque, elle constitue le territoire de la cité-État d'Athènes. On y parle un dialecte ionien.</note>
+                 <note>"ἀττικὴν"</note>
+              </place>
+              <place xml:id="Peloponnese">
+                <placeName>Péloponnèse</placeName> 
+                 <note>Péninsule grecque séparée de la <placeName ref="#Grece">Grèce</placeName> continentale par l'isthme de Corinthe. Divisé en plusieurs territoires de différentes cités comme <placeName ref="#Sparte">Sparte</placeName>, Argos, Corinthe. Il contient les sanctuaires d'Olympie, d'Épidaure et de Némée. On y parle un dialecte dorien.</note>
+                 <note>"πελοπονήσου"</note>
+              </place>
+              <place xml:id="Beotie">
+                 <placeName>Béotie</placeName>
+                 <note>Couverte en grande partie par la confédération béotienne dont la capitale est Thèbes, la Béotie contient également le sanctuaire de Delphes. On y parle un dialecte éolien</note>
+                 <note>"βοιωτία"</note>
+              </place>
+              <place xml:id="Arcadie">
+                 <placeName>Arcadie</placeName>
+                 <note>Région centrale et montagneuse du <placeName ref="Peloponnese">Péloponnèse</placeName>, contient les cités de Mantinée et de Tégée. À l'époque de la Guerre du Péloponnèse elle dépend fortement de la Laconie.</note>
+                 <note>"Ἀρκαδίασ"</note>
+              </place>
+              <place xml:id="Thessalie">
+                 <placeName>Thessalie</placeName>
+                 <note>Région grecque située au sud de la Macédoine, à l'est de l'Épire et au nord de la <placeName ref="#Beotie">Béotie</placeName>. D'importantes cités sont Crannon, Larissa, Phères et Pharsale.</note>       
+                 <note>θεσσαλία</note>
+              </place>
+              <place xml:id="Phtiotide">
+                 <placeName>Phtiotide <addName>Phtie</addName></placeName>
+                 <note>Région du sud-est de la <placeName ref="#Thessalie">Thessalie</placeName>, située au fond du golf Maliaque. Royaume de Pelée lors de la guerre de <placeName ref="#Troie">Troie</placeName>.</note>
+                 <note>"φϑιώτιδι"</note>
+              </place>
+              <place xml:id="Cyclades">
+                 <placeName>Cyclades</placeName>
+                 <note>Archipel du sud de la mer Égée. Elles comprennent près de 250 îles et îlots. Elles sont appelées ainsi car elles forment un cercle autour de l'île-sanctuaire de Délos. <persName ref="#Thucydide">Thucydide</persName> (I, 4) dit que <persName ref="#Minos">Minos</persName> chassa de l'archipel ses premiers habitants, les <orgName ref="#Cariens">Cariens</orgName>.</note>
+                 <note>"κυκλάδων"</note>
+              </place>
+              <place xml:id="Thrace">
+                 <placeName>Thrace</placeName>
+                 <note>Région historique à l'est de la Macédoine dont les côtes sont colonisées par les Grecs et est peuplée de tribus, qui furent unifiées au début du Ve siècle sous Térès Ier.</note>
+                 <note>"Thrace"</note>
+              </place>
+           </listPlace>
+        </settingDesc>
+        <particDesc>
+           <listPerson>
+              <person xml:id="Thucydide">
+                 <persName>
+                    <surname xml:lang="fr">Thucydide</surname>
+                    <surname xml:lang="gr">Θουκυδίδης</surname>
+                    <addName type="patronym" xml:lang="fr">fils d'Oloros</addName>
+                    <addName type="patronym" xml:lang="grc">ολόρου</addName>
+                    <addName type="demonym" xml:lang="fr">l'Athénien</addName>          
+                    <addName type="demonym" xml:lang="grc">Αθηναῖος</addName>   
+                 </persName>
+                 <birth><date when="-0460">-460</date></birth>
+                 <death><date when="-0400">-400</date></death>
+                 <affiliation type="politique">démocratie athénienne</affiliation>
+                 <!-- Activités -->
+                 <occupation type="primary">citoyen d'Athènes</occupation>
+                 <occupation type="temporary" notBefore="-0424" notAfter="-0424">stratège</occupation>
+                 <occupation type="primary">historien</occupation>
+                 <!-- Lieux de résidence -->
+                 <residence type="primary" from="-0460" to="-0424" ref="#Athenes"><placeName>Athènes</placeName></residence>
+                 <residence ref="#Thrace" from="-0424" to="-0400"><placeName>Thrace</placeName></residence>
+                 <note>Il est exilé d'Athènes à l'issue de sa stratégie en -424, il vit le reste de ses jours en Thrace à composer son oeuvres, en se déplaçant à l'occasion.</note>
+              </person>
+              <person xml:id="Homère">
+                 <persName>
+                    <surname>Homère</surname>
+                 </persName>
+                 <occupation>Le poète, auteur de l'Iliade et de l'Odysée.</occupation>
+              </person>
+              <person xml:id="Achille">
+                 <persName>
+                    <surname>Achille</surname>                    
+                 </persName>
+                 <occupation>Roi d'Ithaque</occupation>
+                 <note>Fils de Laërte et Anticlée, époux de Pénélope, père de Télémaque, héros des <orgName ref="#Grecs">Grecs</orgName> de la Guerre de Troie telle que racontée par Homère.</note>
+              </person>
+              <person xml:id="Minos">
+                 <persName>
+                    <surname>Minos</surname>
+                 </persName>
+                 <occupation>Roi légendaire de Crète.</occupation>
+                 <note>Fils de Zeus et d'Europe, époux de Pasiphaé, père de Phèdre, Deucalion, Ariane etc.</note>
+                 <note>Il enferme le monstre Minotaure, enfant de sa femme, dans le labyrinthe construit par Dédale.</note>
+              </person>
+              <person xml:id="Hellen">
+                 <persName>
+                    <surname>Hellen</surname>
+                 </persName>
+                 <occupation>Roi de <placeName ref="#Phtiotide">Phtie</placeName>.</occupation>
+                 <note>Héros éponyme des <orgName ref="#Grecs">Grecs</orgName>, père d'Éole, ancêtre des Éoliens et de Doros, ancêtre des Doriens. Également père de Xouthos qui aura deux enfants, Achaïos, ancêtre des <orgName ref="#Acheens">Achéens</orgName> et de Ion, ancêtre des <orgName ref="#Ioneins">Ioniens</orgName>.</note>
+              </person>
+              <person xml:id="Deucalion">
+                 <persName>
+                    <surname>Deucalion</surname>
+                    <note>Père d'Hellen, fils de Prométhée et de Pronoia ou Clymène. Époux de Pyrrha (fille d'Épiméthée et de Pandore), il survit au Déluge décidé par Zeus.</note>
+                 </persName>
+              </person>
+              <!-- Lien de parenté entre Deucalion et Hellen -->
+              <listRelation type="personal">
+                 <relation name="père" active="#Deucalion" passive="#Hellen"/>
+                 <relation name="fils" active="#Hellen" passive="#Deucalion"/>
+              </listRelation>
+           </listPerson>
+           
+           <listOrg>
+              <org xml:id="Atheniens">
+                 <orgName>
+                    <name>Athéniens</name>
+                 </orgName>
+                 <desc>Citoyens d'Athènes.</desc>
+                 <note>"ἀϑηναίων"</note>
+              </org>
+              <org xml:id="Spartiates">
+                 <orgName>
+                    <name>Spartiates</name>
+                    <addName>Lacédémoniens</addName>
+                 </orgName>
+                 <desc>Citoyens de Sparte, également appelés Égaux.</desc>
+              </org>
+              <org xml:id="Peloponnesiens">
+                 <orgName>
+                    <name>Péloponnésiens</name>
+                 </orgName>
+                 <desc>Citoyens des différentes cités membres de la Ligue du Péloponnèse</desc>
+                 <note>L'expression contemporaine de ligue du Péloponnèse désigne l'alliance de cités grecques, en grande partie péloponnésiennes, sous la direction de <placeName ref="Sparte">Sparte</placeName>.</note>
+                 <note>"πελοποννησίων"</note>
+              </org>
+              <org xml:id="Grecs">
+                 <orgName>
+                    <name>Grecs</name>
+                    <addName>Hellènes</addName>
+                    <note>Comme Thucydide le note, les Grecs ne se sont pas toujours appelés Hellènes, c'était d'abord un gentilé de la région de Phtie. Le nom serait lié à un peuple du sanctuaire deDodone en Épire. Thucydide raconte la légende d'Hellen et de sa descendance qui fut à l'origine des tribus primaires d'Hellas. qui parlent des dialectes distincts de grec.</note>
+                    <note>Thucydide appelle au contraire barbares les populations non grecques telles que les Acarnaniens, les Étoliens, les Épirotes et les Macédoniens dans un sens linguistique.</note>
+                    <note>"Ἕλληνες"</note>
+                 </orgName>
+              </org>
+              <org xml:id="Danaens">
+                 <orgName>
+                    <name>Danéens</name>
+                    <addName>Danaens</addName>
+                    <addName>Danaéens</addName>
+                    <addName>Argiens</addName>
+                    <note>Nom utilisé pour désigner les Achéens, les descendants de Danaos. Peuple vivant en Argolide. Peut signifier Grecs et/ou Argiens chez Homère</note>
+                    <note>La plus célèbre utilisation du terme est placée par Virgile dans la bouche de Laocoon dans l’Énéide (livre II v.49) : « Timeo Danaos et dona ferentes » (“Je crains les Grecs, même quand ils apportent des cadeaux”)</note>
+                 </orgName>
+              </org>
+              <org xml:id="Acheens">
+                 <orgName>
+                    <name>Achéens</name>
+                    <note>Peuple qui serait parmi les premiers à être arrivé en Grèce. Le mot désigne l'ensemble des <orgName type="people" ref="#Grecs">Grecs</orgName> assemblés devant <placeName ref="#Troie">Troie</placeName>, tout comme les <orgName ref="#Danaens">Argiens ou Danaens</orgName>.</note>
+                    <note>Leurs centres de pouvoir sont alors Argos, Tirynthe, Pylos, Mycènes et sont aprfois assimilés aux Mycéniens.</note>
+                    <note>Dans la légende, leur ancêtre serait Achaïos, fils d'Hellen ; ils peuplaient la région montagneuse du nord du <placeName ref="#Peloponnese">Péloponnèse</placeName> au nord-ouest de l'Argolide et abritant les cités de Sicyone, Patras. La ligue achéenne est une confédération de villes d'Achaïe.</note>
+                 </orgName>
+              </org>
+              <org xml:id="Cariens">
+                 <orgName>
+                    <name>Cariens</name>
+                    <note>Peuple du sud-ouest de l'Asie mineure, descendant selon Hérodote de leur héros éponyme, Car.</note>
+                 </orgName>
+              </org>
+              <org xml:id="Locriens-Ozoles">
+                 <orgName>
+                    <name>Locriens Ozoles</name>
+                    <note>Peuple semi-barbare de la Locride, entre la Phocide et l'Étolie. Lors de la guerre de Troie les soldats qui en sont originaires sont commandés par Ajax fils d'Oïlée</note>
+                 </orgName>
+              </org>
+              <org xml:id="Etoliens">
+                 <orgName>
+                    <name>Étoliens</name>
+                    <note>Peuple semi-barbare de l'Étolie, région du sud de l'Épire, séparée du Péloponnèse par le golfe de Corinthe, bordée à l'ouest par l'Acarnanie et à l'est par la Locride.</note>
+                 </orgName>
+              </org>
+              <org xml:id="Acarnaniens">
+                 <orgName>
+                    <name>Acarnaniens</name>
+                    <note>Peuple du territoire semi-barbare délimité de l'Étolie par le fleuve Achéloos, et bordant le golfe Ambracique et la mer Ionienne</note>
+                 </orgName>
+              </org>
+           </listOrg>
+        </particDesc>        
+     </profileDesc>
+     
+     <encodingDesc>
+        <!-- Abréviations -->
+        <charDecl>
+           <char xml:id="ων">
+              <desc>Abbréviation en tilde de "ων"</desc>
+              <localProp name="Name" value="greek abbreviation ων"/>
+           </char>
+           <char xml:id="καὶ">
+              <desc>Abréviation de kai</desc>
+              <localProp name="Name" value="greek abbreviation καὶ"/>
+           </char>
+           <char xml:id="θρώπ">
+              <desc>Abréviation d'άνθρώπῶν</desc>
+              <localProp name="Name" value="greek abbreviation θρώπ"/>
+           </char>
+           <char xml:id="ελ">
+              <desc>Abréviation de ελ</desc>
+              <localProp name="Name" value="greek abbreviation ελ"/>
+           </char>
+           <char xml:id="ος">
+              <desc>Abréviation de ος</desc>
+              <localProp name="Name" value="greek abbreviation ος"/>
+           </char>
+           <char xml:id="ον">
+              <desc>Abréviation de ον</desc>
+              <localProp name="Name" value="greek abbreviation ον"/>
+           </char>
+           <char xml:id="ερ2">
+              <desc>Abréviation de ερ</desc>
+              <localProp name="Name" value="greek abbreviation ερ"/>
+           </char>
+           <char xml:id="ης">
+              <desc>Abréviation suscrite de ης</desc>
+              <localProp name="Name" value="greek abbreviation ης"/>
+           </char>
+           <!-- Ligatures -->
+           <char xml:id="στ">
+              <desc>Ligature de στ</desc>
+              <localProp name="Name" value="greek ligature στ"/>
+           </char>
+           <char xml:id="στερ">
+              <desc>Ligature de στερ</desc>
+              <localProp name="Name" value="greek ligature στερ"/>
+           </char>
+           <char xml:id="ει">
+              <desc>Ligature de ει</desc>
+              <localProp name="Name" value="greek ligature ει"/>
+           </char>
+           <char xml:id="εί">
+              <desc>Ligature de εί</desc>
+              <localProp name="Name" value="greek ligature εί"/>
+           </char>
+           <char xml:id="εἰ">
+              <desc>Ligature de εἰ</desc>
+              <localProp name="Name" value="greek ligature εἰ"/>
+           </char>
+           <char xml:id="εἴ">
+              <desc>Ligature de εἴ</desc>
+              <localProp name="Name" value="greek ligature εἴ"/>
+           </char>
+           <char xml:id="εὶ">
+              <desc>Ligature de εὶ</desc>
+              <localProp name="Name" value="greek ligature εὶ"/>              
+           </char>
+           <char xml:id="εῖ">
+              <desc>Ligature de εῖ</desc>
+              <localProp name="Name" value="greek ligature εῖ"/>
+           </char>
+           <char xml:id="εἶ">
+              <desc>Ligature de εἶ</desc>
+              <localProp name="Name" value="greek ligature εἶ"/>
+           </char>
+           <char xml:id="ευ">
+              <desc>Ligature de ευ</desc>
+              <localProp name="Name" value="greek ligature ευ"/>
+           </char>
+           <char xml:id="ερ">
+              <desc>Ligature de ερ</desc>
+              <localProp name="Name" value="greek ligature ερ"/>
+           </char>
+           <char xml:id="ἐρ">
+              <desc>Ligature de ἐρ</desc>
+              <localProp name="Name" value="greek ligature ἐρ"/>
+           </char>
+           <char xml:id="έρ">
+              <desc>Ligature de έρ</desc>
+              <localProp name="Name" value="greek ligature έρ"/>
+           </char>
+           <char xml:id="ἔρ">
+              <desc>Ligature de ἔρ</desc>
+              <localProp name="Name" value="greek ligature ἔρ"/>
+           </char>
+           <char xml:id="ρο">
+              <desc>Ligature de ρο</desc>
+              <localProp name="Name" value="greek ligature ρο"/>
+           </char>
+           <char xml:id="ρα">
+              <desc>Ligature de ρα</desc>
+              <localProp name="Name" value="greek ligature ρα"/>
+           </char>
+           <char xml:id="ρό">
+              <desc>Ligature de ρό</desc>
+              <localProp name="Name" value="greek ligature ρό"/>
+           </char>
+           <char xml:id="ρὸ">
+              <desc>Ligature de ρὸ</desc>
+              <localProp name="Name" value="greek ligature ρὸ"/>
+           </char>
+           <char xml:id="φό">
+              <desc>Ligature de φό</desc>
+              <localProp name="Name" value="greek ligature φό"/>
+           </char>
+           <char xml:id="τερ">
+              <desc>Ligature de τερ</desc>
+              <localProp name="Name" value="greek ligature τερ"/>
+           </char>
+           <char xml:id="γὰρ">
+              <desc>Ligature de γὰρ</desc>
+              <localProp name="Name" value="greek ligature γὰρ"/>
+           </char>
+           <char xml:id="περ">
+              <desc>Ligature de περ</desc>
+              <localProp name="Name" value="greek ligature περ"/>
+           </char>
+           <char xml:id="σχ">
+              <desc>Ligature de σχ</desc>
+              <localProp name="Name" value="greek ligature σχ"/>
+           </char>
+           <char xml:id="θην">
+              <desc>Ligature de θην</desc>
+              <localProp name="Name" value="greek ligature θην"/>
+           </char>
+           <char xml:id="γερ">
+              <desc>Ligature de γερ</desc>
+              <localProp name="Name" value="greek ligature γερ"/>
+           </char>
+        </charDecl>        
+     </encodingDesc>  
+     <revisionDesc>
+        <change when="2023-02-08">Création de l'encodage par William Le Roux.</change>
+     </revisionDesc>
+  </teiHeader>
+
+   <facsimile>
+      <surface>
+         <graphic url="2r.png" width="2160.2px" height="3840.2px" />
+         <zone xml:id="l1" ulx="119" uly="670" lrx="1924" lry="910" />
+         <zone xml:id="l2" ulx="228" uly="782" lrx="1978" lry="1032" />
+         <zone xml:id="l3" ulx="143" uly="922" lrx="1891" lry="1156" />
+         <zone xml:id="l4" ulx="187" uly="1035" lrx="1883" lry="1273" />
+         <zone xml:id="l5" ulx="262" uly="1154" lrx="1890" lry="1358" />
+         <zone xml:id="l6" ulx="263" uly="1266" lrx="1910" lry="1471" />
+         <zone xml:id="l7" ulx="267" uly="1370" lrx="1919" lry="1577" />
+         <zone xml:id="l8" ulx="248" uly="1487" lrx="1947" lry="1674" />
+         <zone xml:id="l9" ulx="264" uly="1629" lrx="1952" lry="1753" />
+         <zone xml:id="l10" ulx="255" uly="1735" lrx="2020" lry="1860" />
+         <zone xml:id="l11" ulx="289" uly="1780" lrx="2036" lry="2000" />
+         <zone xml:id="l12" ulx="280" uly="1915" lrx="1986" lry="2113" />
+         <zone xml:id="l13" ulx="295" uly="2065" lrx="1988" lry="2221" />
+         <zone xml:id="l14" ulx="299" uly="2143" lrx="1978" lry="2333" />
+         <zone xml:id="l15" ulx="290" uly="2300" lrx="1987" lry="2430" />
+         <zone xml:id="l16" ulx="312" uly="2409" lrx="2018" lry="2549" />
+         <zone xml:id="l17" ulx="326" uly="2502" lrx="2015" lry="2686" />
+         <zone xml:id="l18" ulx="339" uly="2652" lrx="1956" lry="2807" />
+         <zone xml:id="l19" ulx="337" uly="2756" lrx="1965" lry="2916" />
+         <zone xml:id="l20" ulx="326" uly="2878" lrx="1954" lry="3028" />
+         <zone xml:id="l21" ulx="347" uly="2997" lrx="1947" lry="3138" />
+         <zone xml:id="l22" ulx="360" uly="3106" lrx="1979" lry="3274" />
+         <zone xml:id="l23" ulx="346" uly="3226" lrx="1986" lry="3399" />         
+      </surface>
+      <surface>
+         <graphic url="2v.png" width="2160.2px" height="3780.2px" />
+         <zone xml:id="l24" ulx="198" uly="506" lrx="1929" lry="747" />
+         <zone xml:id="l25" ulx="180" uly="650" lrx="1955" lry="864" />
+         <zone xml:id="l26" ulx="153" uly="774" lrx="1946" lry="981" />
+         <zone xml:id="l27" ulx="130" uly="898" lrx="1973" lry="1100" />
+         <zone xml:id="l28" ulx="92" uly="1035" lrx="1971" lry="1200" />
+         <zone xml:id="l29" ulx="157" uly="1143" lrx="1961" lry="1337" />
+         <zone xml:id="l30" ulx="179" uly="1259" lrx="1942" lry="1452" />
+         <zone xml:id="l31" ulx="149" uly="1406" lrx="1896" lry="1559" />
+         <zone xml:id="l32" ulx="159" uly="1510" lrx="1874" lry="1688" />
+         <zone xml:id="l33" ulx="127" uly="1632" lrx="1876" lry="1777" />
+         <zone xml:id="l34" ulx="131" uly="1729" lrx="1945" lry="1894" />
+         <zone xml:id="l35" ulx="125" uly="1849" lrx="1921" lry="2021" />
+         <zone xml:id="l36" ulx="54" uly="1983" lrx="1904" lry="2142" />
+         <zone xml:id="l37" ulx="139" uly="2093" lrx="1897" lry="2270" />
+         <zone xml:id="l38" ulx="133" uly="2212" lrx="1911" lry="2393" />
+         <zone xml:id="l39" ulx="149" uly="2338" lrx="1896" lry="2502" />
+         <zone xml:id="l40" ulx="140" uly="2452" lrx="1931" lry="2638" />
+         <zone xml:id="l41" ulx="31" uly="2577" lrx="1926" lry="2771" />
+         <zone xml:id="l42" ulx="137" uly="2706" lrx="1894" lry="2857" />
+         <zone xml:id="l43" ulx="125" uly="2851" lrx="1928" lry="3011" />
+         <zone xml:id="l44" ulx="175" uly="2958" lrx="1934" lry="3147" />
+         <zone xml:id="l45" ulx="85" uly="3056" lrx="1928" lry="3277" />
+         <zone xml:id="l46" ulx="188" uly="3216" lrx="1937" lry="3388" />         
+      </surface>
+      <surface>
+         <graphic url="3r.png" width="2160.2px" height="3840.2px" />
+         <zone xml:id="l47" ulx="232" uly="411" lrx="1936" lry="643" />
+         <zone xml:id="l48" ulx="247" uly="565" lrx="1939" lry="746" />
+         <zone xml:id="l49" ulx="251" uly="688" lrx="1965" lry="844" />
+         <zone xml:id="l50" ulx="258" uly="800" lrx="1930" lry="960" />
+         <zone xml:id="l51" ulx="252" uly="911" lrx="1937" lry="1073" />
+         <zone xml:id="l52" ulx="263" uly="1035" lrx="1922" lry="1188" />
+         <zone xml:id="l53" ulx="282" uly="1143" lrx="1913" lry="1287" />
+         <zone xml:id="l54" ulx="272" uly="1267" lrx="1931" lry="1387" />
+         <zone xml:id="l55" ulx="283" uly="1350" lrx="1915" lry="1494" />
+         <zone xml:id="l56" ulx="271" uly="1457" lrx="1933" lry="1624" />
+         <zone xml:id="l57" ulx="285" uly="1541" lrx="1920" lry="1727" />
+         <zone xml:id="l58" ulx="291" uly="1655" lrx="1912" lry="1817" />
+         <zone xml:id="l59" ulx="305" uly="1764" lrx="1923" lry="1945" />
+         <zone xml:id="l60" ulx="297" uly="1904" lrx="1917" lry="2034" />
+         <zone xml:id="l61" ulx="312" uly="2013" lrx="1928" lry="2172" />
+         <zone xml:id="l62" ulx="325" uly="2142" lrx="1910" lry="2292" />
+         <zone xml:id="l63" ulx="322" uly="2247" lrx="1939" lry="2421" />
+         <zone xml:id="l64" ulx="337" uly="2371" lrx="1878" lry="2510" />
+         <zone xml:id="l65" ulx="328" uly="2485" lrx="1931" lry="2613" />
+         <zone xml:id="l66" ulx="323" uly="2586" lrx="1954" lry="2732" />
+         <zone xml:id="l67" ulx="317" uly="2675" lrx="2028" lry="2850" />
+         <zone xml:id="l68" ulx="292" uly="2803" lrx="1952" lry="2949" />
+         <zone xml:id="l69" ulx="314" uly="2916" lrx="1969" lry="3071" />
+         
+      </surface>
+      <surface>
+         <graphic url="3v.png" width="2160.2px" height="3840.2px" />
+         <zone xml:id="l70" ulx="139" uly="480" lrx="1991" lry="728" />
+         <zone xml:id="l71" ulx="146" uly="670" lrx="1989" lry="829" />
+         <zone xml:id="l72" ulx="155" uly="791" lrx="2011" lry="946" />
+         <zone xml:id="l73" ulx="150" uly="876" lrx="2005" lry="1063" />
+         <zone xml:id="l74" ulx="155" uly="989" lrx="2018" lry="1183" />
+         <zone xml:id="l75" ulx="174" uly="1107" lrx="2000" lry="1306" />
+         <zone xml:id="l76" ulx="173" uly="1218" lrx="1999" lry="1435" />
+         <zone xml:id="l77" ulx="166" uly="1324" lrx="2012" lry="1525" />
+         <zone xml:id="l78" ulx="182" uly="1426" lrx="1991" lry="1633" />
+         <zone xml:id="l79" ulx="195" uly="1542" lrx="2009" lry="1741" />
+         <zone xml:id="l80" ulx="204" uly="1647" lrx="2028" lry="1876" />
+         <zone xml:id="l81" ulx="202" uly="1786" lrx="1991" lry="1975" />
+         <zone xml:id="l82" ulx="215" uly="1876" lrx="2022" lry="2109" />
+         <zone xml:id="l83" ulx="217" uly="2006" lrx="2017" lry="2215" />
+         <zone xml:id="l84" ulx="221" uly="2111" lrx="2046" lry="2345" />
+         <zone xml:id="l85" ulx="219" uly="2270" lrx="2037" lry="2416" />
+         <zone xml:id="l86" ulx="230" uly="2355" lrx="2009" lry="2576" />
+         <zone xml:id="l87" ulx="217" uly="2525" lrx="1964" lry="2649" />
+         <zone xml:id="l88" ulx="219" uly="2605" lrx="1980" lry="2795" />
+         <zone xml:id="l89" ulx="217" uly="2717" lrx="1971" lry="2930" />
+         <zone xml:id="l90" ulx="231" uly="2849" lrx="1988" lry="3030" />
+         <zone xml:id="l91" ulx="252" uly="2902" lrx="2072" lry="3140" />
+         <zone xml:id="l92" ulx="233" uly="3046" lrx="2012" lry="3261" />
+         <zone xml:id="l93" ulx="133" uly="3194" lrx="1973" lry="3414" />         
+      </surface>
+   </facsimile>
+   
+  <text type="edition">
+      <body>
+       <div type="section" corresp="Premiere-main">
+         <p xml:lang="grc">
+            <pb n="002r"/>
+            <seg n="01" facs="#l1"><persName ref="#Thucydide">Θ&ου;κυδΐδη&ϲ;</persName> αθηναῖο&ϲ; συνέγραψε τὸν πόλεμ<add place="above">ον</add></seg>
+            <seg n="02" facs="#l2">τῶν <orgName type="people" ref="#Peloponnesiens">π&ελ;οπον&ν;ησίων</orgName> καὶ <orgName type="people" ref="#Atheniens">ἀϑηναίων</orgName> ὡς ἐπολέ</seg>
+            <seg n="03" facs="#l3"><add place="margin">-</add><lb break="no"/>μησαν πρὸς ἀλλη&ου;σ ἀρξάμενος εὐθῢσ καθϊ</seg>
+            <seg n="04" facs="#l4"><add place="margin">-</add><lb break="no"/>&στ;αμέν&ου;&middot; καὶ Ἐλπίσασ μέγαν τὲ ἕσεσθ<add place="above">αι </add>καὶ ἀξϊo</seg>
+            <seg n="05" facs="#l5">λογώτατον τῶν π&ρο;γεγενημένω&middot; τεκμαιρόμενο&ϲ;προ</seg>
+            <seg n="06" facs="#l6">ὅτι ἀκμάζοντές τε ἦσαν εἰς αὐτὸν ἀμ&φό;&τερ;οι</seg>
+            <seg n="07" facs="#l7">παρασκ&ευ;ῆ τῆ πάση&middot; καὶ τὸ ἄλλο Ἑλληνϊκὸν ὁρῶν</seg>
+            <seg n="08" facs="#l8">συνι&στ;άμενον. τὸ μὲν, ἀθῖσ τὸ δὲ, καὶ διανο&ού;μενον.</seg>
+            <seg n="09" facs="#l9">κίνησις &γὰρ; αὕτη δὴ μεγί&στ;η τοῖς Ἕλλησιν έγένετο.</seg>
+            <seg n="10" facs="#l10">καὶ μέρει τινὶ τῶν βαρβάρων. ὡς δὲ &εἰ;π&εῖ;ν, καὶ</seg>
+            <seg n="11" facs="#l11">ἐπὶ πλ&εῖ;στον άν&θρώπ;ῶν. t<add place="above">ὰ</add> &γὰρ; π&ρὸ; αὐτῶν καὶ τ<add place="above">ὰ</add> ἔτι παλαι<add place="above">&τερ;<add place="above">α</add></add></seg>
+            <seg n="12" facs="#l12"><unclear reason="faded">σα</unclear>φῶς μὲν εὑρεῖν διὰ ξ&ρό;ν&ου; πλῆθος ἀδύνατον ἦν</seg>
+            <seg n="13" facs="#l13">ἐκ δὲ τεκηρίων ὧν ἐπι μακ&ρό;τατον σκοποῦντι μ<add place="above">οι</add></seg>
+            <seg n="14" facs="#l14">πι&στ;εῦσαι συμβαίν&ει;, &οὐ; μεγάλα νομίζω γενέσϑ<add place="above">αι</add>.</seg>
+            <seg n="15" facs="#l15">&οὔ;τε κατὰ τ&οὺ;ς πολέμ&ου;ς  &οὔ;τε &εἰ;ς τ<add place="above">ὰ</add> ἄλλα. Φαίνετ<add place="above">αι</add> &γὰρ;</seg>
+            <seg n="16" facs="#l16">ἡ νῦν <placeName ref="#Grèce">̔Ελλὰσ</placeName> καλουμένη, &οὐ; πάλαι βεβαί<add place="above">ως </add> οἰκουμέν<add place="above">η</add>.</seg>
+            <seg n="17" facs="#l17">ἀλλὰ μετανα&στ;άσ&ει;ς τε &οὖ;σαι τα πρό&τερ;α, καὶ ῥαδι<add place="above">ως</add></seg>
+            <seg n="18" facs="#l18">ἕκα&στ;οι τὴν ἑαυτῶν ἀπολ&εί;ποντεσ, βιαζόμενοι</seg>
+            <seg n="19" facs="#l19">ὑπό τινων αἰ&εὶ; πλ&ει;όνων. τῆς &γὰρ; ἐμποιρίασ</seg>
+            <seg n="20" facs="#l20">&οὐ;κ &οῦ;σησ, &οὐ;δε ἐπιμιγνυν(τ)εσ ἀδεῶς ἀλλήλοι&siglunpt;</seg>
+            <seg n="21" facs="#l21">&οὔ;τε κατὰ γῆν &οὔ;τε διᾶ ϑαλάσση&siglunpt;, νεμόμενοί τε</seg>
+            <seg n="22" facs="#l22">τ<add place="above">ᾶ</add> ἑαυτῶν ἑκαστοι ὅσον ἀποζῆν καὶ &περ;ι&ου;σίαν χρη</seg>
+            <seg n="23" facs="#l23">μάτων &οὐ;κ ἔκοντεσ, &οὐ;δὲ γῆν φυτεύοντ<add place="above">εσ</add>, ἄδηλ<add place="above">ον</add> ὂν</seg>
+         </p>
+            
+         <p xml:lang="fr">
+            <pb n="002r" type="traduction"/>
+            <seg n="01"><persName ref="#Thucydide">Thucydide</persName>d'Athènes a raconté comment se déroula la guerre</seg>
+            <seg n="02">entre les <orgName type="people" ref="#Peloponnesiens">Péloponnésiens</orgName> et les <orgName type="people" ref="#Atheniens">Athéniens</orgName>. </seg>
+            <seg n="03">Il s'était mis au travail dès les premiers symptômes de cette guerre ; et il avait prévu</seg>
+            <seg n="04">qu'elle prendrait de grandes proportions et une portée passant celle des précédentes.</seg>
+            <seg n="05">Il pouvait le conjecturer parce que les deux groupes étaient, en l'abordant, dans le</seg>
+            <seg n="06">plein épanouissement de toutes leurs forces ; et, d'autre part, il voyait</seg>
+            <seg n="07">le reste du monde grec se joindre à chaque camp, aussitôt ou en projet.</seg>
+            <seg n="08">Ce fut bien la plus grande crise qui émut la</seg>
+            <seg n="09"><placeName ref="#Grèce">Grèce</placeName> et une fraction du monde barbare</seg>
+            <seg n="10">elle gagna, pour ainsi dire, la majeure partie de l'humanité.</seg>
+            <seg n="11">De fait, pour la période antérieure et les époques plus anciennes encore, on ne pouvait guère,</seg> 
+            <seg n="12">vu le recul du temps, arriver à une connaissance parfaite, mais, d'après les indices</seg>
+            <seg n="13"> qui, au cours des recherches les plus étendues, m'ont permis d'arriver à une conviction,</seg>
+            <seg n="14">je tiens que rien n'y prit de grandes proportions, les guerres pas plus que le reste.</seg>
+            <seg n="15">On voit, en effet, que la <placeName ref="#Grèce">Grèce</placeName> actuelle n'était pas</seg>
+            <seg n="16">anciennement habitée de façon stable ; on émigrait, dans les premiers temps, et tous</seg>
+            <seg n="17">quittaient facilement leurs résidences, sous la pression, chaque fois, d'éléments plus nombreux.</seg>
+            <seg n="18">Le commerce n'existait pas, et il n'y avait pas de relations sûres entre peuples, par terre ou par mer ;</seg> 
+            <seg n="19">de plus, ils tiraient chacun de leur pays de quoi vivre : ils n'avaient pas de réservers d'argent et ne faisaient pas de plantations.</seg>
+         </p>
+            
+         <p xml:lang="grc">
+            <pb n="002v"/>
+            <seg n="01" facs="#l24">ὁπότε τ&ι;ς επελϑών καὶ ἀτ&ει;χίσων των ἅμα ὄντων</seg>
+            <seg n="02" facs="#l25">ἄλλοσ ἀφαιρήσεται; τῆσ τε καϑ΄ ἠμέραν ἀνανγκαί<add place="above">&ου;</add></seg>
+            <seg facs="#26">τ&ρο;φῆς πανταχοῦ ἄν ἡγούμενοι ἐπικρατ&εῖ;ν; &οὐ;</seg>
+            <seg facs="#l27">χαλεπῶς ἀπανίσταντο&middot; καὶ δἰ αὔτὸ &οὔ;τε μεγέσϑ&ει; πό</seg>
+            <seg facs="#l28"><add place="margin">-</add><lb break="no"/>λεων ἴσχυον, &οὔ;τε τῆ ἄλλη παρασκευῆ&middot; μάλιστ<add place="above">α</add>δὲ</seg>
+            <seg facs="#l29">τῆς γῆς ἡ αρἰστη, αἰεὶ τᾶσ  μεταβολὰσ τῶν οἰκητόρ<add place="above">&ων;</add></seg>
+            <seg facs="#l30">εἶχεν&middot; ἥ τε νῦν <placeName ref="#Thessalie">θεσσαλία</placeName> καλ&ου;μένη καὶ <placeName ref="#Beotie">βοιωτί<add place="above">α</add></placeName>.</seg>
+            <seg facs="#l31"><placeName ref="#Peloponnese">πελοπονήσ&ου; </placeName>τὲ τὰ πολλὰ, πλὴν <placeName ref="#Arcadie">̓Αρκαδίασ</placeName>. τῆς τε</seg>
+            <seg facs="#l32">ἄλλης ὅσα ἦν κράτιστ<add place="above">α</add>&middot; διᾶ γὰρ ἀρετὴν γῆς αἵ τε</seg>
+            <seg facs="#l33">δυνάμ&ει;σ τισὶ μ&εί;ζουσ ἐγγιγνομεναι, &στ;άσ&ει;σ ἐνε</seg>
+            <seg facs="#l34">ποίουν, ἐξ ὧν ἐφθείροντο&middot; και ἅμα ὑπὸ ἀλλοφύλ<add place="above">&ων;</add></seg>
+            <seg facs="#l35">μᾶλλον ἐπεβουλευοντο&middot; τὴν γοῦν <placeName ref="#Attique">ἀττικὴν</placeName> ἐκ &τοῦ;</seg>
+            <seg facs="#l36"><add place="margin">-</add><lb break="no"/>ἐπὶ πλεῖστον διὰ τὸ λεπτόγεων ἀστασίαστον &οὔ;σαν, ἄν&θρώπ;οι</seg>
+            <seg facs="#l37">ὤκουν οἱ αὐτοὶ ἀεί&middot; καὶ παράδειγμα τόδε τ<add place="above" >&ου;</add>λόγ&ου;</seg>
+            <seg facs="#l38">&οὐ;κ  ἐλάχι&στ;όν ἐ&στ;ι&middot; διᾶ τὰσ μετοικίασ ἐσ τ<add place="above">ὰ</add> ἄλλ α μὴ</seg>
+            <seg facs="#l39">ὁμοίως αὐξηθῆναι&middot; ἐκ γὰρ τῆς ἄλλης ̔Ελλάδο&ϲ;, οἱ</seg>
+            <seg facs="#l40">πολέμω ἤ &στ;άσ&ει; ἐκπίπτοντεσ, παρ ΄ <orgName type="people" ref="#Atheniens">ἀθηναι<add place="above">&ου;ς</add></orgName> οἱ δϋ</seg>
+            <seg facs="#l41"><add place="margin">-</add><lb break="no"/>νατώτατοι ὡς βέβαιον ὂν ἀνεχώρ&ου;ν&middot; καὶ πολίτ<add place="above">αι</add></seg>
+            <seg facs="#l42">γϊγνόμενοι εύθὺς ἀπὸ παλαι&οῦ; μ&εί;ζω ἔτϊ ἐποίησαν</seg>
+            <seg facs="#l43">πλήθ&ει; ἀν&θρώπ;ων τὴν πόλιν&middot; ὥςτε καὶ ἐς <placeName ref="#Ionie">ἰωνίαν</placeName> ὕ&στ;<add place="above">&ερ2;ον</add></seg>
+            <seg facs="#l44">ὥς &οῦ;χ ἱκανῆς &οὔ;ση&ϲ; τῆς <placeName ref="#Attique">ἀττικῆς</placeName>, αποικίασ ἐξέπεμ</seg>
+            <seg facs="#l45"><add place="margin">-</add><lb break="no"/>ψαν. δηλοῖ δε,́ μοι καὶ τόδε τῶν παλαιῶν ἀσϑέν<unclear reason="smudge">&ει;αν</unclear></seg>
+            <seg facs="#l46">&οὐ;χ ἥκι&στ;<add place="above">α</add>. π&ρὸ; γὰρ τῶν <placeName ref="#Troie">τρωϊκῶν</placeName>, &οὐ;δὲν φαίνεται</seg>
+         </p>
+            
+         <p xml:lang="fr">
+            <pb n="002v" type="traduction"/>
+            <seg> Car on ne savait jamais, le manque de rempart aidant, quand un autre viendrait pour vous</seg>            
+            <seg>dépouiller ; enfin, ils se disaient qu'en fait de nourriture, ils s'assureraient</seg>
+            <seg>n'importe où de quoi satisfaire aux besoins quotidiens :</seg>
+            <seg>aussi partaient-ils sans difficulté ; et cette raison les empêchait d'être</seg> 
+            <seg>forts, soit par l'importance des villes, soit par aucune autre ressource.</seg>
+            <seg> Plus que les autres, c'étaient les meilleures terres dont les occupants</seg>
+            <seg>changeaient toujours : ainsi la <placeName ref="#Thessalie">Thessalie</placeName> et la <placeName ref="#Beotie">Béotie</placeName></seg>
+            <seg>actuelles, la plus grande partie du <placeName ref="#Peloponnese">Péloponnèse</placeName> moins l'<placeName ref="#Arcadie">Arcadie</placeName></seg>
+            <seg>et, en général, les pays préférables aux autres. Grâce aux qualités du sol, les moyens de certains se développaient,</seg> 
+            <seg>entraînant des rivalités intérieures, causes de ruine ;</seg>
+            <seg>en même temps, ils étaient en butte, plus que les autres,</seg>
+            <seg>aux menées étrangères. Εn tout cas, l'<placeName ref="#Attique">Attique</placeName>,</seg>
+            <seg>aussi loin que l'on remonte, dut à son aridité d'ignorer les rivalités internes, et</seg>
+            <seg>ses habitants restaient toujours les mêmes. Un fait illustre particulièrement cette idée que les migrations</seg>
+            <seg>ont empêché les autres pays de connaître un égal développement : quand on était chassé</seg>
+            <seg>d'un autre pays grec par une guerre ou une rivalité interne, les gens les mieux pourvus</seg>
+            <seg>venaient à <placeName ref="#Athenes">Athènes</placeName> pour y chercher un refuge</seg>
+            <seg>stable ; ils devenaient citoyens, et ils grossirent encore, dès l'époque ancienne, la population</seg>
+            <seg>de la ville ; tant et si bien que plus tard, l'<placeName ref="#Attique">Attique</placeName></seg>
+            <seg>étant jugée insuffisante, on envoya même des colonies en <placeName ref="#Ionie">Ionie</placeName>.</seg>
+            <seg>Je trouve encore un autre signe de la faiblesse qui marquait les temps anciens, et il n'est pas à négliger ; c'est</seg>
+            <seg>qu'avant la guerre de <placeName ref="#Troie">Troie</placeName>, on ne voit rien</seg>
+         </p>
+            
+         <p xml:lang="grc">
+            <pb n="003r" />
+            <seg facs="#l47">πρό&τερ;ον κοινῆ &ἐρ;γασαμένη ἡ <placeName ref="#Grèce">Ἑλλ&ὰά;σ</placeName>&middot; δοκ&εῖ; δέ μοι</seg>
+            <seg facs="#l48">&οὑ;δε τ&οῦ;νομα τοῦτο ξύμπασ<add place="above">ά</add> πω &εἶ;χεν&middot; ἀλλ<add place="above">α</add> τὰ μὲν</seg>
+            <seg facs="#l49">π&ρὸ; <persName ref="#Hellen">ἕλληνος</persName> τ&οῦ; <persName ref="#Deucalion">δ&ευ;καλίων&ος;</persName>, &καὶ; πάνυ &οὐ;δὲ &εἶ;ναι ἡ ἐπί</seg>
+            <seg facs="#l50"><lb break="no"/>κλησις αὕτη&middot; κατὰ ἔϑνη δὲ ἄλλα τ&ὲε; καὶ τὸ πελασγικὸν</seg>
+            <seg facs="#l51">ἐπι πλ&εῖ;στον ἀφ̓ ἑαυτῶν τὴν ἐπωνυμίαν παρέχεσϑαι&middot;</seg>
+            <seg facs="#l52"><persName ref="#Hellen">ἕλληνος</persName> δὲ καὶ τῶν παίδων αὐτ<add place="above">&ουοῦ;</add> ἐν τῆ<placeName ref="#Phtiotide">φϑιώτι<add place="above">δι</add></placeName> ἰ&σχ;υ</seg>
+            <seg facs="#l53"><lb break="no"/>σάντων καὶ ἐπαγομένων αὐτ&οὺ;ς ἐπ̓ ὠφελί<add place="above">α</add> ἐσ τὰσ</seg>
+            <seg facs="#l54">ἄλλασ πόλ&ει;ς, καϑʹ ἑκά&στ;&ου;ς μὲν ἤδη τῆ ὁμιλί<add place="above">α</add> μᾶλλον</seg>
+            <seg facs="#l55">καλ&εῖ;σθαι <orgName ref="#Grecs">ἕλληνασ</orgName>&middot; &οὐ; μέντοι πολλ&οὐ; γε χ&ρό;ν<add place="above">&ου;</add> &ἠἐ;δύνατο</seg>
+            <seg facs="#l56">καὶ ἅπασιν ἐκνικῆσαι. τεκμηριοῖ δὲ μάλι&στ;<add place="above">α</add> <persName ref="#Homère">ὅμηρ&ος;</persName></seg>
+            <seg facs="#l57">πολλῶ &γὰρ; ὕ&στερ;ον ἕτι καὶ τῶν <placeName ref="#Troie">τρωικῶν</placeName> γενόμενος,</seg>
+            <seg facs="#l58">&οὐ;δαμ&οῦ; τ&οὺ;ς ξυμπαντ<add place="above">&ας;</add> ὠνόμασεν&middot; &οὐ;δ̓ ἄλλ&ου;ς ἢ τ&οὺ;ς</seg>
+            <seg facs="#l59">ω&ϲ; τ<add place="above">ὰ</add> <persName ref="#Achille">ἀχιλλέως</persName> ἐκ τῆς <placeName ref="#Phtiotide">φϑοιῶτιδος</placeName> οἵπ&ερ; καὶ πρῶτ<add place="above">οι</add></seg>
+            <seg facs="#l60"><orgName type="people" ref="#Grecs">Ἕλληνες</orgName> ἦσαν&middot;  <orgName type="people" ref="#Danaens">δανα&ου;ς</orgName> δὲ  ἐν τοῖς ἔπεσι καὶ δὲ <orgName type="people" ref="#Danaens">ἀργ&εί;&ου;ς</orgName></seg>
+            <seg facs="#l61">καὶ <orgName type="people" ref="#Acheens">ἀρχαι&ου;ς</orgName> ἀνακαλ&εῖ;&middot; &οὐ;  μὴν &οὐ; δὲ βαρβάρ&ου;ς  &εἴ;ρηκ<add place="above">ε</add>&middot;</seg>
+            <seg facs="#l62">διᾶ τὸ μηδὲ <orgName ref="#Grecs">ἔλληνάσ</orgName> πω ὡς ἐμοὶ δοκ&εῖ; ἀντίπαλον</seg>
+            <seg facs="#l63">ἐσ ἑν ὄνομ<add place="above">α</add> αποκεκρισϑαι&middot; οἱ δʹ οὖν ὡς ἕκα&στ;οι <orgName ref="#Grecs">ἕλλη<add place="above">νες</add></orgName>,</seg>
+            <seg facs="#l64">κατὰ πόλ&ει;ς τὲ ὅσοι ἀλλήλων ξυνίεσαν&middot; καὶ ξύμ</seg>
+            <seg facs="#l65">παντεσ ὕ&στερ;ον κληϑέντεσ; &οὐ;δὲν π&ρὸ; των <placeName ref="#Troie">τρωικων</placeName></seg>
+            <seg facs="#l66">διʹ ἀσϑέν&ει;αν καὶ ἀμειξίαν ἀλλήλων ἀϑρόοι ἔπραξ<add place="above">αν</add>&middot;</seg>
+            <seg facs="#l67">ἀλλὰ καὶ ταύτην τὴν &στ;&ρα;τ&εί;αν ϑαλάσσης ἤδ<add place="above">η</add> πλ&ει;<add place="above">ω</add></seg>
+            <seg facs="#l68">χρώμεν<add place="above">οι</add> ξυμῆλϑον&middot; <persName ref="#Minos">μίνως</persName> &γὰρ; παλαιτάτ&ος; ὧν ἀκο<add place="above">ῆ</add></seg>
+            <seg facs="#l69">ἴσμεν, ναυτικὸν ἐκτήσατο&middot; καὶ τῆς νῦν ἑλληνικῆς</seg>
+         </p>
+            
+         <p xml:lang="fr">
+            <pb n="003r" type="traduction"/> 
+            <seg>que l'<placeName ref="#Grèce">Hellade</placeName> ait, jusque-là, accompli en commun. Ce nom même, me</seg>
+            <seg>semble-t-il, ne s'emplyait pas encore pour la désigner dans son ensemble :</seg>
+            <seg>avant <persName ref="#Hellen">Hellen</persName>, fils de <persName ref="#Deucalion">Deucalion</persName>, il semble que</seg>
+            <seg>cette appellation n'ait même eu aucune existence ; il n'y avait que des peuplades - certaines, comme</seg>
+            <seg>l'élément pélasgique, assurant à leur propre nom la diffusion la plus étendue ;</seg>
+            <seg>puis <persName ref="#Hellen">Hellen</persName> et ses fils devinrent puissants en <placeName ref="#Phtiotide">Phtiotide</placeName>, </seg>
+            <seg>on se mit à les réclamer dans les autres cités, pour se faire aider, et </seg>
+            <seg>les rapports ainsi crées répandirent alors de peuples à peuples le nom</seg>
+            <seg>d'<orgName type="people" ref="#Grecs">Hellènes</orgName> ; cependant il fallut longtemps avant qu'il pût s'imposer </seg>
+            <seg>pour tous. Ce qui le prouve le plus c'est <persName ref="#Homère">Homère</persName></seg>
+            <seg>lui qui vécut à une époque encore bien postérieure à la guerre de <placeName ref="#Troie">Troie</placeName>,</seg>
+            <seg>il n'a nulle part appliqué le nom à l'ensemble ; il ne l'applique qu'aux compagnons</seg>
+            <seg>d'<persName ref="#Achille">Achille</persName>, venus de <placeName ref="#Phtiotide">Phtiotide</placeName>, qui furent précisément, les premiers</seg>
+            <seg><orgName type="people" ref="#Grecs">Hellènes</orgName> ; et il emploie dans ses poèmes les termes de <orgName type="people" ref="#Danaens">Danaens</orgName>, d'<orgName type="people" ref="#Danaens">Argiens</orgName></seg>
+            <seg>et d'<orgName type="people" ref="#Acheens">Achéens</orgName>. Il n'a, du reste, pas davantage employé le mot de barbares,</seg>
+            <seg>cela parce qu'à mon avis les <orgName type="people" ref="#Grecs">Grecs</orgName> n'étaient pas encore groupés de leur côté, 
+               sous un terme unique qui pût s'y opposer. Quoi qu'il en soit, ceux qui reçurent successivement</seg>
+            <seg>le nom d'<orgName type="people" ref="#Grecs">Hellènes</orgName>, d'abord cité par cité, quand les gens se comprenaient,</seg>
+            <seg>et plus tard de façon générale, n'accomplirent rien ensemble avant la guerre de <placeName ref="#Troie">Troie</placeName> :</seg>
+            <seg>leur faiblesse, l'absence de relations entre eux les en empêchaient.</seg>
+            <seg>Et cette expédition même ne les réunit qu'à un moment où l'usage de la mer était déjà plus développé.</seg>
+            <seg><persName ref="Minos">Minos</persName> est, en effet, le plus ancien personnage connu par la tradition qui ait eu une flotte</seg>
+            <seg>et conquis, pour la plus grande partie, la maîtrise de la mer aujourd'hui grecque.</seg>
+         </p>    
+            
+         <p xml:lang="grc">
+            <pb n="003v" /> 
+            <seg facs="#l70">ϑαλάσσησ ἐπι πλ&εῖ;&στ;ον ἐκράτησε &middot; καὶ τῶν <placeName ref="#Cyclades">κυκλάδων</placeName></seg>
+            <seg facs="#l71">νήσων ἦρξέ τε&middot; καὶ οἰκι&στ;ὴς πρῶτ<add place="above">ος</add> τῶν πλ&εί;&στ;ων ἐγενε<add place="above">το</add>&middot;</seg>
+            <seg facs="#l72"><orgName ref="#Cariens">κ&άᾶ;ρασ</orgName> ἐξελάσασ, καὶ τοὺσ ἑαυτ<add place="above">&ου;</add> παῖδασ ἡγεμόνασ ἐγ</seg>
+            <seg facs="#l73"><lb break="no"/>κατα&στ;ήσασ. τό τε  λη&στ;ικόν ὡς &εἰ;κός καϑήρ&ει; ἐκ τῆς θαλάσσ<add place="above">&ης;</add>,</seg>
+            <seg facs="#l74">ἐφʹ ὅσον ἐδυνατο &middot; τ&οῦ; τὰς π&ρο;σόδ&ου;ς μᾶλλον ἰέναι αὐτ<add place="above">ω</add> . οἱ &γὰρ;</seg>
+            <seg facs="#l75"><orgName ref="#Grecs">ἕλληνεσ</orgName> το πάλαι, &καὶ; τῶν βαρβάρων οἵ τε ἐν τῆ ἠπ&εί;ρ<add place="above">ω</add> &middot; παρα</seg>
+            <seg facs="#l76">ϑαλάσσιοι, καὶ ὅσοι νήσ&ου;ς εἶχον, ἐπω&ει;δὴ ἤρξαν<add place="above">το</add> μᾶλλ<add place="above">ον</add> &περ;αι</seg>
+            <seg facs="#l77">&οῦ;σϑαι ναυσὶν; ἐπʹ ἀλλήλ&ου;ς ἐτράποντο π&ρὸ;σ λη&στ;&εί;αν. ἡγ&ου;</seg>
+            <seg facs="#l78">μένων ἀνδρῶν &οὐ; τῶν ἀδυνατωτάτ<add place="above">ων</add> κ&έρ;δ&ου;ς τ&οῦ; σφετ&έρ;<add place="above">&ου;</add></seg>
+            <seg facs="#l79">αὐτῶν ἕνεκα καὶ τοῖς ἀσϑενέσι τ&ρο;φῆς&middot; καὶ π&ρο;σπίπτον<add place="above">τες</add></seg>
+            <seg facs="#l80">πόλεσιν ἀτειχί&στ;οις καὶ κατὰ κώμας οἰμας οἰκ&ου;μέναις, ἥρπαζ<add place="above">ον</add></seg>
+            <seg facs="#l81">καὶ τὸ πλ&εῖ;&στ;ον τ&οῦ; βί&ου; ἐντευ&θην; ἐποι&οῦ;ντο&middot; &οὐ;κ ἔχοντός πω</seg>
+            <seg facs="#l82">αἰσχύνην τ&ού;τ&ου; τ&οῦ; &ἔρ;γ&ου;&middot; φ&έρ;οντος δέ τι καὶ δόξης μᾶλλ&ον;.</seg>
+            <seg facs="#l83">δηλ&οῦ;σι δὲ τε ἠπ&ει;ρωτῶν τινες ἔτι καὶ νῦν οἶς κόσμ<add place="above">&ος;</add></seg>
+            <seg facs="#l84">καλῶς τ&οῦ;το δρᾶν; καὶ οἱ παλαιοὶ τῶν ποιητῶν τὰσ πύ&στ;&ει;ς</seg>
+            <seg facs="#l85">τῶν καταπλεόντ<add place="above">&ων;</add> πανταχ&οῦ; ὁμοίως &ἐρ;ωτῶντ<add place="above">ες</add> εἰ λη&στ;<add place="above">αι</add> &ει;σι&ν;&middot;</seg>
+            <seg facs="#l86">ὡς &οὔ;τε ὧν πυνϑάνοντ<add place="above">αι</add> ἀπαξιούντ&ων; τὸ &ἔρ;γ<add place="above">ον</add>; οἷς τε ἐπιμελὲσ</seg>
+            <seg facs="#l87">εἴη &εἰ;δέν<add place="above">αι</add>, &οὐ;κ ον&ει;διζόντων&middot; ἐληίζοντο δὲ καὶ κατʹ ἤπ&ει;&ρο;ν</seg>
+            <seg facs="#l88">ἀλλήλ&ου;ς&middot; καὶ μέχρι τ&οῦ;δε  πολλ<add place="above">ὰ</add> τῆς <placeName ref="#Grèce">ἑλλάδος</placeName> τῶ παλαιῶ</seg>
+            <seg facs="#l89">π&ρό;πω νέμετ<add place="above">αι</add>. π&ερ;ι τε <orgName type="people" ref="#Locriens-Ozoles">λοκρ&οὺ;ς τ&οὺ;ς ὀζολας</orgName> και <orgName type="people" ref="#Etoliens">αἰτωλ&οὺ;ς</orgName></seg>
+            <seg facs="#l90">καὶ <orgName type="people" ref="#Acarnaniens">ἀκαρνᾶν<add place="above">ασ</add></orgName> καὶ τὴν ταύτη ἤπ&ει;ρ&ον;&middot; τό τε σιδη&ρο;φορ&εῖ;ϑ<add place="above">αι</add></seg>
+            <seg facs="#l91">τ&ού;τοις τοῖς ἠπ&ει;ρώταις, ἀπὸ τῆς παλαιᾶς λη&στ;&εί;&ας; ἐμμεμέ</seg>
+            <seg facs="#l92">νηκε&middot; πᾶσ<add place="above">α</add> &γὰρ; ἡ <placeName ref="Grèce">ἑλλὰσ</placeName> ἐσιδη&ρο;φορ&ει; διὰ τὰσ αφ&ρὰ;κτ<add place="above">&ου;σ</add></seg>
+            <seg facs="#l93">τε οἰκήσ&ει;σ, &καὶ; &οὐ;κ ἀσφαλ&εῖ;ς παρ ἄλλήλ&ου;ς ἐφόδ&ου;ς&middot;</seg>
+         </p>
+            
+         <p xml:lang="fr">
+            <pb n="003v" type="traduction"/>
+            <seg>il établit sa domination sur les <placeName ref="#Cyclades">Cyclades</placeName> et installa</seg>
+            <seg>dans la plupart des premières colonies : il en chassa les</seg>
+            <seg><orgName type="people" ref="Cariens">Cariens</orgName>, puis y institua comme chefs ses propres fils.</seg>
+            <seg>Par une suite naturelle, il travailla, dans toutes l'étendue de son pouvoir, à purger la mer</seg>
+            <seg>des pirates, pour mieux assurer la retraite de ses revenus.</seg>
+            <seg>C'est que les <orgName type="people" ref="Grecs">Grecs</orgName> d'autrefois, ainsi que les barbares installés en bordure du continent ou dans les îles</seg>
+            <seg>dès que les relations maritimes entre les pays avaient commencée à se développer,</seg>
+            <seg>s'étaient adonnés à la piraterie. Ils avaient à leur tête des hommes qui, n'étant pas personnellement des moins bien</seg>
+            <seg>pourvus, cherchaient un profit pour eux-mêmes, et de quoi manger pour les faibles. Tombant sur des peuples</seg>
+            <seg>sans remparts, qui vivaient par bourgades, ils exerçaient la rapine et tiraient de</seg>
+            <seg>là le principal de leur subsistance : cette activité n'impliquait encore</seg>
+            <seg>rien de honteux et apportait plutôt un élément de gloire.</seg>
+            <seg>C'est ce que montrent, aujourd'hui encore certains peuples du continent, chez qui on</seg>
+            <seg>s'honore à la bien pratiquer ; et de même les anciens poètes, qui adressent</seg>
+            <seg>partout la même question aux voyageurs qui débarquent, leur demandant</seg>
+            <seg>s'ils sont des pirates : d'après cela, les gens interrogés ne désavouaient pas plus</seg>
+            <seg>cette activité que ceux en quête d'information n'y attachaient de blâme. Ils pratiquaient aussi le </seg>
+            <seg>pillage sur terre ; et, jusqu'à nos jours, une grande partie de la <placeName ref="#Grèce">Grèce</placeName> vit </seg>
+            <seg>à la manière ancienne, du côté des <orgName type="people" ref="#Locrien-Ozoles">Locriens Ozoles</orgName>, des <orgName type="people" ref="#Etoliens">Étoliens</orgName>,</seg>
+            <seg>des <orgName type="people" ref="#Acarnaniens">Acarnaniens</orgName> et des pays continentaux situés dans la région.</seg>
+            <seg>L'usage de porter les armes qu'ont ces peuples continentaux est une survivance </seg>
+            <seg>des anciennes habitudes de pillage. Car toute la <placeName ref="#Grèce">Grèce</placeName> portait les armes, </seg>
+            <seg>faute d'habitations protégées et de communications sûres</seg>            
+         </p>
+        </div>
+      </body>
+  </text>
+</TEI>
