@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  ABBRÉVIATIONS  -->
+<!ENTITY ΟΥ "<choice><abbr>&#x0222;</abbr><expan><ex>ΟΥ</ex></expan></choice>">
+<!ENTITY ου "<choice><abbr>&#x0223;</abbr><expan><ex>ου</ex></expan></choice>">
+<!ENTITY οὐ "<choice><abbr>&#x0222;&#x0313;</abbr><expan><ex>οὐ</ex></expan></choice>">
+<!ENTITY οὑ "<choice><abbr>&#x0222;&#x0314;</abbr><expan><ex>οὑ</ex></expan></choice>">
+<!ENTITY οὺ "<choice><abbr>&#x0222;&#x0300;</abbr><expan><ex>οὺ</ex></expan></choice>">
+<!ENTITY ού "<choice><abbr>&#x0222;&#x0301;</abbr><expan><ex>ού</ex></expan></choice>">
+<!ENTITY οῦ "<choice><abbr>&#x0222;&#x0342;</abbr><expan><ex>οῦ</ex></expan></choice>">
+<!ENTITY οὓ "<choice><abbr>&#x0222;&#x0314;&#x0300;</abbr><expan><ex>οὓ</ex></expan></choice>">
+<!ENTITY οὕ "<choice><abbr>&#x0222;&#x0314;&#x0301;</abbr><expan><ex>οὕ</ex></expan></choice>">
+<!ENTITY οὒ "<choice><abbr>&#x0222;&#x0313;&#x0300;</abbr><expan><ex>οὒ</ex></expan></choice>">
+<!ENTITY οὔ "<choice><abbr>&#x0222;&#x0313;&#x0300;&#x0301;</abbr><expan><ex>οὔ</ex></expan></choice>">
+<!ENTITY οὗ "<choice><abbr>&#x0223;&#x0314;&#x0342;</abbr><expan><ex>οὗ</ex></expan></choice>">
+<!ENTITY οὖ "<choice><abbr>&#x0223;&#x0313;&#x0342;</abbr><expan><ex>οὖ</ex></expan></choice>">
+
+<!ENTITY ων "<choice><abbr><g ref=#ων/></abbr><expan>ων</expan></choice>">
+<!ENTITY θρώπ "<choice><abbr>&#x1FC0;</abbr><expan>θρώπ</expan></choice>">
+<!ENTITY ελ "<choice><abbr><g ref=#ελ/></abbr><expan>ελ</expan></choice>">
+<!ENTITY ος "<choice><abbr></abbr><g ref=#ος/><expan>ος</expan></choice>">
+<!ENTITY καὶ "<choice><abbr><g ref=#καὶ/></abbr><expan>καὶ</expan></choice>">
+<!ENTITY ον "<choice><abbr><g ref=#ον/></abbr><expan>ον</expan></choice>">
+<!ENTITY ερ2 "<choice><abbr><g ref=#ερ2/></abbr><expan>ερ</expan></choice>">
+<!ENTITY ης "<choice><abbr><g ref=#ης/></abbr><expan>ης</expan></choice>">
+    
+<!-- VARIANTES DE LETTRES -->    
+<!-- The lunate sigma, It is the Byzantine form of letter sigma. One could say that the lunate sigma is again simply a stylistic variant of the regular sigma, without contextuality. Of course it would be interesting for the paleographer  -->
+<!ENTITY ϲ "<choice><abbr><g>&#x3F2;</g></abbr><expan><ex>ς</ex></expan></choice>"><!--  sigma lunaire minuscule-->
+<!ENTITY siglunpt "<choice><abbr>&#x037C;</abbr><expan><ex>ς</ex></expan></choice>"><!-- sigma lunaire pointé minuscule -->
+<!ENTITY ϑ "<choice><abbr>&#x3D1;</abbr><expan><ex>θ</ex></expan></choice>"><!--  thêta ouvert -->
+<!ENTITY ϕ "<choice><abbr>&#x3D5;</abbr><expan><ex>φ</ex></expan></choice>"><!-- phi ouvert -->
+<!--<!ENTITY ϖ "<choice><abbr>&#03D6;</abbr><expan><ex>π</ex></expan></choice>"><!-\- pi rond -\->-->
+<!--Curieusement la déclaration d'entité pour le pi rond ne fonctionne pas et renvoie une erreur sur la clôture de la déclaration d'entité, et nous avons eu beau essayé d'y remédier rien n'y fit. Aussi avons nous décidé de laisser les pi dans leur forme traditionnel mais de laisser dans la DTD ce commentaire signalant la présence de pi ronds-->
+
+<!-- LIGATURES -->
+<!--Telles que déclarées dans l'encodingDesc-->
+<!ENTITY στ "<choice><abbr><g ref=#στ/></abbr><expan>στ</expan></choice>">
+<!ENTITY στερ "<choice><abbr><g ref=#στερ/></abbr><expan>στερ</expan></choice>">
+<!ENTITY ει "<choice><abbr><g ref=#ει/></abbr><expan>ει</expan></choice>">
+<!ENTITY εί "<choice><abbr><g ref=#εί/></abbr><expan>εί</expan></choice>">
+<!ENTITY εἴ "<choice><abbr><g ref=#εἴ/></abbr><expan>εἴ</expan></choice>">
+<!ENTITY εὶ "<choice><abbr><g ref=#εὶ/></abbr><expan>εὶ</expan></choice>">
+<!ENTITY εἰ "<choice><abbr><g ref=#εἰ/></abbr><expan>εἰ</expan></choice>">
+<!ENTITY εῖ "<choice><abbr><g ref=#εῖ/></abbr><expan>εῖ</expan></choice>">
+<!ENTITY εἶ "<choice><abbr><g ref=#εἶ/></abbr><expan>εἶ</expan></choice>">
+<!ENTITY ευ "<choice><abbr><g ref=#ευ/></abbr><expan>ευ</expan></choice>">
+<!ENTITY ερ "<choice><abbr><g ref=#ερ/></abbr><expan>ερ</expan></choice>">
+<!ENTITY ἐρ "<choice><abbr><g ref=#ἐρ/></abbr><expan>ἐρ</expan></choice>">
+<!ENTITY έρ "<choice><abbr><g ref=#έρ/></abbr><expan>έρ</expan></choice>">
+<!ENTITY ἔρ "<choice><abbr><g ref=#ἔρ/></abbr><expan>ἔρ</expan></choice>">
+<!ENTITY ρο "<choice><abbr><g ref=#ρο/></abbr><expan>ρο</expan></choice>">
+<!ENTITY ρα "<choice><abbr><g ref=#ρα/></abbr><expan>ρα</expan></choice>">
+<!ENTITY ρό "<choice><abbr><g ref=#ρό/></abbr><expan>ρό</expan></choice>">
+<!ENTITY ρὸ "<choice><abbr><g ref=#ρὸ/></abbr><expan>ρὸ</expan></choice>">
+<!ENTITY φό "<choice><abbr><g ref=#φό/></abbr><expan>φό</expan></choice>">
+<!ENTITY τερ "<choice><abbr><g ref=#τερ/></abbr><expan>τερ</expan></choice>"> 
+<!ENTITY γὰρ "<choice><abbr><g ref=#γὰρ/></abbr><expan>γὰρ</expan></choice>">
+<!ENTITY περ "<choice><abbr><g ref=#περ/></abbr><expan>περ</expan></choice>">
+<!ENTITY σχ "<choice><abbr><g ref=#σχ/></abbr><expan>σχ</expan></choice>">
+<!ENTITY θην "<choice><abbr><g ref=#θην/></abbr><expan>θην</expan></choice>">
+<!ENTITY γερ "<choice><abbr><g ref=#γερ/></abbr><expan>γερ</expan></choice>">
+ 
+<!-- CORRECTIONS -->
+    <!-- OMISSION LETTRE -->
+<!ENTITY ν "<choice><sic></sic><corr>ν</corr></choice>">
+<!ENTITY ας "<choice><sic></sic><corr>ας</corr></choice>">
+    <!--  OMISSION ACCENT ET/OU ESPRIT -->
+ <!-- circonflexe manquant déporté sur la ligne du dessus par le scribe -->
+<!ENTITY τοῦ "<choice><sic>του</sic><corr>τοῦ</corr></choice>">
+<!ENTITY ι "<choice><sic>ί</sic><corr>ι</corr></choice>">
+<!ENTITY ὰά "<choice><sic>ὰ</sic><corr>ά</corr></choice>">
+<!ENTITY ὲε "<choice><sic>ὲ</sic><corr>ε</corr></choice>">
+<!ENTITY ουοῦ "<choice><sic>&#x223;</sic><corr>&οῦ;</corr></choice>"> <!-- ou latin suscrit au lieu de ou latin avec circonflexe suscrit-->
+<!ENTITY ἠἐ "<choice><sic>ἠ</sic><corr>ἐ</corr></choice>">
+<!ENTITY άᾶ "<choice><sic>ά</sic><corr>ᾶ̓</corr></choice>">
+<!ENTITY ρὰ "<choice><sic>ρὰ</sic><corr>ὰρ</corr></choice>">
+
+<!--  PONCTUATION  -->
+<!ENTITY hypd "<choice><sic>&#x2E12;</sic><corr>,</corr></choice>"> <!--  Hypodiastole -->
+<!ENTITY highdot "<choice><sic>&#x0387;</sic><corr>.</corr></choice>"> <!--  stigme teleia, point haut, semblable à un point -->
+<!ENTITY middot "<choice><sic>&#x00B7;</sic><corr> ; </corr></choice>"> <!--  stigme mese, point médian, semblable à un point virgule -->
+<!ENTITY lowdot "<choice><sic>.</sic><corr>,</corr></choice>"> <!--  hypostigme, point bas, semblable à une virgule -->
+
