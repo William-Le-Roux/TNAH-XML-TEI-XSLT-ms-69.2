@@ -12,7 +12,7 @@
             </author>
          </titleStmt>
          <publicationStmt>
-            <!-- En admettant que cet encodage de la vie de Saint Sixte soit publié sur Élec sous licence CC Share-Alike -->
+            <!-- En admettant que cet encodage du ms Plut. 69.2 de Thucydide soit publié sur Élec sous licence CC Share-Alike -->
             <publisher>Éditions en ligne de l'école des chartes</publisher>
             <pubPlace>Paris</pubPlace>
             <date when-iso="2023-02">Février 2023</date>
@@ -387,7 +387,7 @@
                               <s:assert test="tei:head">Une liste bibliographique dans un listBibl doit disposer d'un titre balisé dans l'élément head</s:assert>
                            </s:rule>
                         </s:pattern>
-                        <s:pattern id="1ormorebiblStruct">
+                        <s:pattern id="uneouplusieursbiblStruct">
                            <s:rule context="tei:listBibl">
                               <s:assert test="tei:biblStruct">Une liste bibliographique dans un listBibl doit au moins d'un élément biblStruct.</s:assert>
                            </s:rule>
@@ -2165,6 +2165,34 @@
                <classRef key="att.global.facs"/>
                <classRef key="att.global.linking"/>
                <classRef key="att.global.analytic"/>
+               
+               <classRef key="model.global"/>
+               <classRef key="model.common"/>
+               <classRef key="model.phrase"/>
+               <classRef key="model.respLike"/>
+               <classRef key="model.pLike"/>
+               <classRef key="model.teiHeaderPart"/>
+               <classRef key="model.publicationStmtPart.agency"/>
+               <classRef key="model.publicationStmtPart.detail"/>
+               <classRef key="model.listLike"/>
+               <classRef key="model.biblLike"/>
+               <classRef key="model.biblPart"/>
+               <classRef key="model.dimLike"/>
+               <classRef key="model.profileDescPart"/>
+               <classRef key="model.personLike"/>
+               <classRef key="model.personPart"/>
+               <classRef key="model.placeLike"/>
+               <classRef key="model.nameLike"/>
+               <classRef key="model.noteLike"/>
+               <classRef key="model.placeStateLike"/>
+               <classRef key="model.encodingDescPart"/>
+               <classRef key="model.graphicLike"/>
+               <classRef key="model.div1Like"/>
+               <classRef key="model.div2Like"/>
+               <classRef key="model.div3Like"/>
+               <classRef key="model.choicePart"/>
+               <classRef key="model.rdgLike"/>
+               <classRef key="model.rdgPart"/>
             </schemaSpec>
          </div1>
       </body>

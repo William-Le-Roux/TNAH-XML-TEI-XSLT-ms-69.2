@@ -14,14 +14,14 @@
 <!ENTITY οὗ "<choice><abbr>&#x0223;&#x0314;&#x0342;</abbr><expan><ex>οὗ</ex></expan></choice>">
 <!ENTITY οὖ "<choice><abbr>&#x0223;&#x0313;&#x0342;</abbr><expan><ex>οὖ</ex></expan></choice>">
 
-<!ENTITY ων "<choice><abbr><g ref=#ων/></abbr><expan>ων</expan></choice>">
+<!ENTITY ων "<choice><abbr><g ref='#ων'/></abbr><expan>ων</expan></choice>">
 <!ENTITY θρώπ "<choice><abbr>&#x1FC0;</abbr><expan>θρώπ</expan></choice>">
-<!ENTITY ελ "<choice><abbr><g ref=#ελ/></abbr><expan>ελ</expan></choice>">
-<!ENTITY ος "<choice><abbr></abbr><g ref=#ος/><expan>ος</expan></choice>">
-<!ENTITY καὶ "<choice><abbr><g ref=#καὶ/></abbr><expan>καὶ</expan></choice>">
-<!ENTITY ον "<choice><abbr><g ref=#ον/></abbr><expan>ον</expan></choice>">
-<!ENTITY ερ2 "<choice><abbr><g ref=#ερ2/></abbr><expan>ερ</expan></choice>">
-<!ENTITY ης "<choice><abbr><g ref=#ης/></abbr><expan>ης</expan></choice>">
+<!ENTITY ελ "<choice><abbr><g ref='#ελ'/></abbr><expan>ελ</expan></choice>">
+<!ENTITY ος "<choice><abbr></abbr><g ref='#ος'/><expan>ος</expan></choice>">
+<!ENTITY καὶ "<choice><abbr><g ref='#καὶ'/></abbr><expan>καὶ</expan></choice>">
+<!ENTITY ον "<choice><abbr><g ref='#ον'/></abbr><expan>ον</expan></choice>">
+<!ENTITY ερ2 "<choice><abbr><g ref='#ερ2'/></abbr><expan>ερ</expan></choice>">
+<!ENTITY ης "<choice><abbr><g ref='#ης'/></abbr><expan>ης</expan></choice>">
     
 <!-- VARIANTES DE LETTRES -->    
 <!-- The lunate sigma, It is the Byzantine form of letter sigma. One could say that the lunate sigma is again simply a stylistic variant of the regular sigma, without contextuality. Of course it would be interesting for the paleographer  -->
@@ -34,31 +34,31 @@
 
 <!-- LIGATURES -->
 <!--Telles que déclarées dans l'encodingDesc-->
-<!ENTITY στ "<choice><abbr><g ref=#στ/></abbr><expan>στ</expan></choice>">
-<!ENTITY στερ "<choice><abbr><g ref=#στερ/></abbr><expan>στερ</expan></choice>">
-<!ENTITY ει "<choice><abbr><g ref=#ει/></abbr><expan>ει</expan></choice>">
-<!ENTITY εί "<choice><abbr><g ref=#εί/></abbr><expan>εί</expan></choice>">
-<!ENTITY εἴ "<choice><abbr><g ref=#εἴ/></abbr><expan>εἴ</expan></choice>">
-<!ENTITY εὶ "<choice><abbr><g ref=#εὶ/></abbr><expan>εὶ</expan></choice>">
-<!ENTITY εἰ "<choice><abbr><g ref=#εἰ/></abbr><expan>εἰ</expan></choice>">
-<!ENTITY εῖ "<choice><abbr><g ref=#εῖ/></abbr><expan>εῖ</expan></choice>">
-<!ENTITY εἶ "<choice><abbr><g ref=#εἶ/></abbr><expan>εἶ</expan></choice>">
-<!ENTITY ευ "<choice><abbr><g ref=#ευ/></abbr><expan>ευ</expan></choice>">
-<!ENTITY ερ "<choice><abbr><g ref=#ερ/></abbr><expan>ερ</expan></choice>">
-<!ENTITY ἐρ "<choice><abbr><g ref=#ἐρ/></abbr><expan>ἐρ</expan></choice>">
-<!ENTITY έρ "<choice><abbr><g ref=#έρ/></abbr><expan>έρ</expan></choice>">
-<!ENTITY ἔρ "<choice><abbr><g ref=#ἔρ/></abbr><expan>ἔρ</expan></choice>">
-<!ENTITY ρο "<choice><abbr><g ref=#ρο/></abbr><expan>ρο</expan></choice>">
-<!ENTITY ρα "<choice><abbr><g ref=#ρα/></abbr><expan>ρα</expan></choice>">
-<!ENTITY ρό "<choice><abbr><g ref=#ρό/></abbr><expan>ρό</expan></choice>">
-<!ENTITY ρὸ "<choice><abbr><g ref=#ρὸ/></abbr><expan>ρὸ</expan></choice>">
-<!ENTITY φό "<choice><abbr><g ref=#φό/></abbr><expan>φό</expan></choice>">
-<!ENTITY τερ "<choice><abbr><g ref=#τερ/></abbr><expan>τερ</expan></choice>"> 
-<!ENTITY γὰρ "<choice><abbr><g ref=#γὰρ/></abbr><expan>γὰρ</expan></choice>">
-<!ENTITY περ "<choice><abbr><g ref=#περ/></abbr><expan>περ</expan></choice>">
-<!ENTITY σχ "<choice><abbr><g ref=#σχ/></abbr><expan>σχ</expan></choice>">
-<!ENTITY θην "<choice><abbr><g ref=#θην/></abbr><expan>θην</expan></choice>">
-<!ENTITY γερ "<choice><abbr><g ref=#γερ/></abbr><expan>γερ</expan></choice>">
+<!ENTITY στ "<choice><abbr><g ref='#στ'/></abbr><expan>στ</expan></choice>">
+<!ENTITY στερ "<choice><abbr><g ref='#στερ'/></abbr><expan>στερ</expan></choice>">
+<!ENTITY ει "<choice><abbr><g ref='#ει'/></abbr><expan>ει</expan></choice>">
+<!ENTITY εί "<choice><abbr><g ref='#εί'/></abbr><expan>εί</expan></choice>">
+<!ENTITY εἴ "<choice><abbr><g ref='#εἴ'/></abbr><expan>εἴ</expan></choice>">
+<!ENTITY εὶ "<choice><abbr><g ref='#εὶ'/></abbr><expan>εὶ</expan></choice>">
+<!ENTITY εἰ "<choice><abbr><g ref='#εἰ'/></abbr><expan>εἰ</expan></choice>">
+<!ENTITY εῖ "<choice><abbr><g ref='#εῖ'/></abbr><expan>εῖ</expan></choice>">
+<!ENTITY εἶ "<choice><abbr><g ref='#εἶ'/></abbr><expan>εἶ</expan></choice>">
+<!ENTITY ευ "<choice><abbr><g ref='#ευ'/></abbr><expan>ευ</expan></choice>">
+<!ENTITY ερ "<choice><abbr><g ref='#ερ'/></abbr><expan>ερ</expan></choice>">
+<!ENTITY ἐρ "<choice><abbr><g ref='#ἐρ'/></abbr><expan>ἐρ</expan></choice>">
+<!ENTITY έρ "<choice><abbr><g ref='#έρ'/></abbr><expan>έρ</expan></choice>">
+<!ENTITY ἔρ "<choice><abbr><g ref='#ἔρ'/></abbr><expan>ἔρ</expan></choice>">
+<!ENTITY ρο "<choice><abbr><g ref='#ρο'/></abbr><expan>ρο</expan></choice>">
+<!ENTITY ρα "<choice><abbr><g ref='#ρα'/></abbr><expan>ρα</expan></choice>">
+<!ENTITY ρό "<choice><abbr><g ref='#ρό'/></abbr><expan>ρό</expan></choice>">
+<!ENTITY ρὸ "<choice><abbr><g ref='#ρὸ'/></abbr><expan>ρὸ</expan></choice>">
+<!ENTITY φό "<choice><abbr><g ref='#φό'/></abbr><expan>φό</expan></choice>">
+<!ENTITY τερ "<choice><abbr><g ref='#τερ'/></abbr><expan>τερ</expan></choice>"> 
+<!ENTITY γὰρ "<choice><abbr><g ref='#γὰρ'/></abbr><expan>γὰρ</expan></choice>">
+<!ENTITY περ "<choice><abbr><g ref='#περ'/></abbr><expan>περ</expan></choice>">
+<!ENTITY σχ "<choice><abbr><g ref='#σχ'/></abbr><expan>σχ</expan></choice>">
+<!ENTITY θην "<choice><abbr><g ref='#θην'/></abbr><expan>θην</expan></choice>">
+<!ENTITY γερ "<choice><abbr><g ref='#γερ'/></abbr><expan>γερ</expan></choice>">
  
 <!-- CORRECTIONS -->
     <!-- OMISSION LETTRE -->
