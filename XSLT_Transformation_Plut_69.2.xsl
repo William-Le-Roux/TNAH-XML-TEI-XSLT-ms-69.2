@@ -156,13 +156,9 @@
                                                     </xsl:for-each>
                                                     <xsl:for-each select="//scriptDesc/ScriptNote[@script='min-bouleutée']/p">
                                                         <xsl:value-of select="translate(.,'Minuscule bouleutée','La minuscule bouleutée est')"/>
-                                                        <!--                                                            <xsl:if test="position()!= last()"> ;</xsl:if>
-                                                            <xsl:if test="position() = last()">.</xsl:if>-->
                                                     </xsl:for-each>
                                                     <xsl:for-each select="//scriptDesc/ScriptNote[@script='Beta-Gamma']/p">
-                                                        <xsl:value-of select="replace(.,'Écriture Beta-Gamma','L&amp;apos;écriture Bêta-Gamma est')"/>                                                      
-                                                        <!--                                                            <xsl:if test="position()!= last()"> ;</xsl:if>
-                                                            <xsl:if test="position() = last()">.</xsl:if>-->
+                                                        <xsl:value-of select="replace(.,'Écriture Beta-Gamma','L&amp;apos;écriture Bêta-Gamma est')"/>
                                                     </xsl:for-each>
                                                     </p>
                                                 </xsl:when>
@@ -263,24 +259,7 @@
                                                         <xsl:value-of select=".//imprint/date"/><xsl:text>, </xsl:text>
                                                         <xsl:value-of select=".//extent"/><br/>
                                                     </xsl:otherwise>
-                                                </xsl:choose>
-                                                <!--                                            <xsl:choose>
-                                                <xsl:when test=".//idno[@type='ISSN']">
-                                                    <xsl:text>(ISSN </xsl:text>
-                                                    <xsl:value-of select=".//idno[@type='ISSN']"/>
-                                                    <xsl:text>), </xsl:text>
-                                                </xsl:when>
-                                                                                                        <xsl:when test=".//idno[@type='ISBN']">
-                                                            <xsl:text>(ISBN </xsl:text>
-                                                            <xsl:value-of select=".//idno[@type='ISBN']"/>
-                                                            <xsl:text>), </xsl:text>
-                                                        </xsl:when>
-                                                <xsl:otherwise>
-                                                    <xsl:text>(</xsl:text>
-                                                    <xsl:value-of select=".//idno"/>
-                                                    <xsl:text>), </xsl:text>
-                                                </xsl:otherwise>
-                                            </xsl:choose>-->
+                                                </xsl:choose>                                               
                                                 </p>
                                             </li>
                                         </xsl:for-each>
