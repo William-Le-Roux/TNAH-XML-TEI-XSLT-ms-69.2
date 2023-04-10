@@ -21,3 +21,7 @@ Ce projet consiste en l'édition en `XML TEI` des premiers feuillets du manuscri
 
 * Déposer l'ensemble des documents sur un *repository* GitHub
 
+## Transformation XSLT
+La feuille de style ```XSL```, réalisée pour l'évaluation du cours d'```XSLT``` du M2, prend en entrée le fichier ```XML TEI``` et renvoie en sortie cinq fichiers ```HTML```. 
+
+Ces fichiers constituent un site navigable dédié à l'édition numérique, qui comprend une **page d'accueil**, la **page d'informations**  relatives au manuscrit, une **transcription fac-similaire et une traduction**, un **fac-similé** et un **index des noms, lieux et peuples**.
