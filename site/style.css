@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* Police */
+@font-face {
+    font-family : 'SBL_Greek';
+    src : url('../fonts/SBL_Greek/SBL_grk.ttf')
+  }
+
+/* Police pour la transcription des caractères grecs */
+.transc {
+  font-family : 'SBL_Greek' !important;
+}
+
+.index_grec {
+  font-family: 'SBL_Greek';
+}
+
+  body {
+    background-color: #FCFCF9;
+    font-family: 'Gentium Basic';
+    color: #2D2B2B;
+  }
+  
+/* Navbar */
+nav {
+    padding-left: 5% !important;
+    border-bottom: 2px solid #D3D0CB;
+  }
+
+  /* Footer */
+footer {
+    border-top: 2px solid #D3D0CB;
+    font-size: 1em !important;
+  }
+
+/* Titres */
+h1, h2, h3, h4, h5 {
+    font-family: 'Garamond Bold';
+    color: #8E8EA0;
+  }
+
+  /* Liens */
+a {
+    color: inherit;
+  }
+  
+  a:hover {
+    color: #D3D0CB;
+  }
+
+
+
+
+
+
